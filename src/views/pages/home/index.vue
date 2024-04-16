@@ -1,0 +1,41 @@
+<template>
+    <!-- Header Start -->
+    <div>
+        <Hero/>
+        <MakeTeam />
+        <Branding />
+        <web-design />
+        <app-design />
+        <approach />
+        <Testimonial />
+    </div>
+    <!-- Header End -->
+</template>
+
+<script>
+import Hero from '../../../components/home/hero.vue'
+import MakeTeam from '../../../components/home/make-team.vue'
+import Branding from '../../../components/home/branding.vue'
+import WebDesign from '@/components/home/web-design.vue'
+import AppDesign from '@/components/home/app-design.vue'
+import Approach from '@/components/home/approach.vue'
+import Testimonial from '@/components/home/testimonial.vue'
+
+export default{
+    components: {
+        Hero,
+        MakeTeam,
+        Branding,
+        WebDesign,
+        AppDesign,
+        Approach,
+        Testimonial
+        
+    },
+  data() {
+    return {
+      
+    };
+  },
+}
+</script>
