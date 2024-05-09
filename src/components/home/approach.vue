@@ -2,131 +2,35 @@
     <!-- Header Start -->
     <div class="container-fluid hero-header background py-5">
         <div class="container py-5">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <div class="cards-wrapper">
-        <div class="card">
-          <div class="image-wrapper">
-            <img src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-1-card-1.jpg" alt="...">
+          <div class="">
+            <h1 class="py-5 animated slideInDown col-lg-8 approach-text px-0"><span class="black">Our Approach</span></h1>
           </div>
-          <div class="card-body">
-            <h5 class="card-title bold">Research</h5>
-            <p class="card-text">We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.</p>
-            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+          <div class="card-group gap-5">
+            <div class="card">
+              <img src="/src/assets//img/approach1.png" class="card-img-top" alt="...">
+              <div class="card-body px-0 pt-5 col-md-9">
+                <h5 class="card-title"><strong>Research</strong></h5>
+                <p class="card-text">We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using. </p>
+                
+              </div>
+            </div>
+            <div class="card">
+              <img src="/src//assets//img/approach2.png" class="card-img-top" alt="...">
+              <div class="card-body px-0 pt-5 col-md-9">
+                <h5 class="card-title"><strong>Strategize</strong></h5>
+                <p class="card-text">We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using. </p>
+               
+              </div>
+            </div>
+            <div class="card">
+              <img src="/src/assets/img/approach3.png" class="card-img-top" alt="...">
+              <div class="card-body px-0 pt-5 col-md-9">
+                <h5 class="card-title"><strong>Implement</strong></h5>
+                <p class="card-text">We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.</p>
+                
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <div class="image-wrapper">
-            <img src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-1-card-2.jpg" alt="...">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title bold">Strategies</h5>
-            <p class="card-text">We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.</p>
-            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-          </div>
-        </div>
-        <div class="card">
-          <div class="image-wrapper">
-            <img src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-1-card-3.jpg" alt="...">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title bold">Implement</h5>
-            <p class="card-text">We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.</p>
-            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="cards-wrapper">
-        <div class="card">
-          <div class="image-wrapper">
-            <img src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-2-card-1.jpg" alt="...">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-          </div>
-        </div>
-        <div class="card">
-          <div class="image-wrapper">
-            <img src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-2-card-2.jpg" alt="...">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.</p>
-            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-          </div>
-        </div>
-        <div class="card">
-          <div class="image-wrapper">
-            <img src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-2-card-3.jpg" alt="...">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="cards-wrapper">
-        <div class="card">
-          <div class="image-wrapper">
-            <img src="https://codingyaar.com/wp-content/uploads/bootstrap-multiple-items-carousel-slide-3-card-1.jpg" alt="...">
-          </div>
-          <div class="card-body px-0">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-          </div>
-        </div>
-        <div class="card">
-          <div class="image-wrapper">
-            <img src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-3-card-2.jpg" alt="...">
-          </div>
-          <div class="card-body px-0">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-          </div>
-        </div>
-        <div class="card">
-          <div class="image-wrapper">
-            <img src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-3-card-3.jpg" alt="...">
-          </div>
-          <div class="card-body px-0">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button> -->
-</div>
-
-<!-- <p class="mt-5 text-center">Get a step-by-step written explanation here: <a href="https://codingyaar.com/bootstrap-4-carousel-multiple-items-responsive/" target="_blank">Bootstrap Carousel Card Slider
-  </a> </p>
-
-<p class="mt-3 text-center">Get a step-by-step video explanation here: <a href="https://youtu.be/kHPm_AlxP7U" target="_blank">Bootstrap Carousel Card Slider
-  </a> </p> -->
         </div>
     </div>
     <!-- Header End -->
@@ -187,4 +91,14 @@
   max-height: 100%;
 }
 
+
+.approach-text{
+    
+    
+    font-size: 40px;
+    font-weight: 600;
+}
+.black{
+    color: #000;
+}
 </style>

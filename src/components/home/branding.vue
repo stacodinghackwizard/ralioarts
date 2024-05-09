@@ -156,5 +156,6 @@
 .case-link{
     color: #2866E0;
     border-bottom: 2px solid #2866E0;
+    
 }
 </style>

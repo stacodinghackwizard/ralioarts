@@ -7,7 +7,8 @@
         <web-design />
         <app-design />
         <approach />
-        <Testimonial />
+        <!-- <Testimonial /> -->
+        <company-card/>
     </div>
     <!-- Header End -->
 </template>
@@ -20,6 +21,7 @@ import WebDesign from '@/components/home/web-design.vue'
 import AppDesign from '@/components/home/app-design.vue'
 import Approach from '@/components/home/approach.vue'
 import Testimonial from '@/components/home/testimonial.vue'
+import companyCard from '@/components/home/company-card.vue'
 
 export default{
     components: {
@@ -29,7 +31,8 @@ export default{
         WebDesign,
         AppDesign,
         Approach,
-        Testimonial
+        Testimonial,
+        companyCard
         
     },
   data() {
