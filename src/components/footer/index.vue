@@ -75,8 +75,12 @@ import { RouterLink } from "vue-router";
                                 <li><a href="#">portfolio</a></li>
                                 <li><a href="#">Contact</a></li>
                                 <li><a href="#">About us</a></li>
+                              
                                 <li><a href="#">Our Services</a></li>
                                 <li><a href="#">Expert Team</a></li>
+                                <li><RouterLink to="/all-project" class=""
+                                    ><span>All Project</span></RouterLink
+                                  ></li>
                                 <li>
 
                                   <RouterLink to="/contact-us" class=""
@@ -117,11 +121,16 @@ import { RouterLink } from "vue-router";
                     <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
                         <div class="footer-menu">
                             <ul>
-                                <li><a href="#">Home</a></li>
+                                <li><RouterLink to="/" class=""
+                                    ><span>Home</span></RouterLink
+                                  ></li>
                                 <li><a href="#">Terms</a></li>
                                 <li><a href="#">Privacy</a></li>
                                 <li><a href="#">Policy</a></li>
                                 <li><a href="#">Contact</a></li>
+                                <li><RouterLink to="/all-project" class=""
+                                    ><span>All Project</span></RouterLink
+                                  ></li>
                             </ul>
                         </div>
                     </div>
