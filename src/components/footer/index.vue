@@ -1,4 +1,5 @@
 <script setup>
+import { RouterLink } from "vue-router";
 </script>
 
 <template>
@@ -9,7 +10,7 @@
                 <div class="row">
                     <div class="col-xl-4 col-md-4 mb-30">
                         <div class="single-cta">
-                            <i class="fas fa-map-marker-alt"></i>
+                            <i class="fas fa-map-marker-alt light-blue"></i>
                             <div class="cta-text">
                                 <h4>Find us</h4>
                                 <span>1010 Avenue, sw 54321, chandigarh</span>
@@ -18,19 +19,19 @@
                     </div>
                     <div class="col-xl-4 col-md-4 mb-30">
                         <div class="single-cta">
-                            <i class="fas fa-phone"></i>
+                            <i class="fas fa-phone light-blue"></i>
                             <div class="cta-text">
                                 <h4>Call us</h4>
-                                <span>9876543210 0</span>
+                                <span>+234 8068524030</span>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-4 col-md-4 mb-30">
                         <div class="single-cta">
-                            <i class="far fa-envelope-open"></i>
+                            <i class="far fa-envelope-open light-blue"></i>
                             <div class="cta-text">
                                 <h4>Mail us</h4>
-                                <span>mail@info.com</span>
+                                <span>info@ralioarts.ng</span>
                             </div>
                         </div>
                     </div>
@@ -41,7 +42,12 @@
                     <div class="col-xl-4 col-lg-4 mb-50">
                         <div class="footer-widget">
                             <div class="footer-logo">
-                                <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png" class="img-fluid" alt="logo"></a>
+                              <RouterLink class="navbar-brand" to="/" @click="HideburgerMenu">
+                                <!-- <img src="/src/assets/tta-logo.png" alt="Logo" /> -->
+                                <img src="/src/assets/img/ralioLogo.png" class="logo" />
+                                <span class="logo-bg">Ralioarts</span>
+                              </RouterLink>
+                                <!-- <a href="index.html"><img src="/src/assets/img/ralioLogo.png" class="img-fluid" alt="logo"></a> -->
                             </div>
                             <div class="footer-text">
                                 <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
@@ -69,7 +75,10 @@
                                 <li><a href="#">About us</a></li>
                                 <li><a href="#">Our Services</a></li>
                                 <li><a href="#">Expert Team</a></li>
-                                <li><a href="#">Contact us</a></li>
+                                <li><a href="/contact-us">Contact us</a></li>
+                                <!-- <RouterLink to="/contact-us" class=""
+                                  ><span>Contact Us</span></RouterLink
+                                > -->
                                 <li><a href="#">Latest News</a></li>
                             </ul>
                         </div>
@@ -85,7 +94,7 @@
                             <div class="subscribe-form">
                                 <form action="#">
                                     <input type="text" placeholder="Email Address">
-                                    <button><i class="fab fa-telegram-plane">Subscribe</i></button>
+                                    <button class="light-blue-bg"><i class="fab fa-telegram-plane"></i></button>
                                 </form>
                             </div>
                         </div>
@@ -228,6 +237,7 @@ ul {
 }
 .footer-widget ul li a:hover{
   color: #ff5e14;
+  /* color: #4242ab; */
 }
 .footer-widget ul li a {
   color: #878787;
@@ -279,5 +289,40 @@ ul {
 .footer-menu li a {
   font-size: 14px;
   color: #878787;
+}
+.light-blue{
+    color: #2866E0 !important;
+}
+.light-blue-bg{
+  background-color: #2866E0 !important;
+  border: 1px solid #2866E0 !important;
+  outline: 1px solid #2866E0 !important;
+}
+.logo-bg{
+  color: #FFF;
+  font-size: 17px;
+  font-weight: 700;
+}
+.logo{
+  width: 30px !important;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.navbar-brand {
+  color: #fff;
+ 
+ 
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+  color: #fff !important;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-brand {
+    color: #fff;
+  }
 }
 </style>
