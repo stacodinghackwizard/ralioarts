@@ -67,7 +67,9 @@ import { RouterLink } from "vue-router";
                                 <h3>Useful Links</h3>
                             </div>
                             <ul>
-                                <li><a href="#">Home</a></li>
+                                <li><RouterLink to="/" class=""
+                                    ><span>Home</span></RouterLink
+                                  ></li>
                                 <li><a href="#">about</a></li>
                                 <li><a href="#">services</a></li>
                                 <li><a href="#">portfolio</a></li>
