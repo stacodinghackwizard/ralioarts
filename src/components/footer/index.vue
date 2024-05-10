@@ -75,10 +75,12 @@ import { RouterLink } from "vue-router";
                                 <li><a href="#">About us</a></li>
                                 <li><a href="#">Our Services</a></li>
                                 <li><a href="#">Expert Team</a></li>
-                                <li><a href="/contact-us">Contact us</a></li>
-                                <!-- <RouterLink to="/contact-us" class=""
-                                  ><span>Contact Us</span></RouterLink
-                                > -->
+                                <li>
+
+                                  <RouterLink to="/contact-us" class=""
+                                    ><span>Contact Us</span></RouterLink
+                                  >
+                                </li>
                                 <li><a href="#">Latest News</a></li>
                             </ul>
                         </div>
