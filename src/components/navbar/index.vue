@@ -260,7 +260,10 @@ export default {
   z-index: 3;
   /* border-bottom: 1px solid black; */
   background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add this line */
 }
+
+
 
 @media (max-width: 991.98px) {
   .tta-navbar-light {

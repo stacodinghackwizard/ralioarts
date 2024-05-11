@@ -71,12 +71,14 @@ import { RouterLink } from "vue-router";
                                     ><span>Home</span></RouterLink
                                   ></li>
                                 <li><a href="#">about</a></li>
-                                <li><a href="#">services</a></li>
+                                <li><RouterLink to="/services" class=""
+                                    ><span>Services</span></RouterLink
+                                  ></li>
                                 <li><a href="#">portfolio</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <!-- <li><a href="#">Contact</a></li> -->
                                 <li><a href="#">About us</a></li>
                               
-                                <li><a href="#">Our Services</a></li>
+                                <!-- <li><a href="#">Our Services</a></li> -->
                                 <li><a href="#">Expert Team</a></li>
                                 <li><RouterLink to="/all-project" class=""
                                     ><span>All Project</span></RouterLink
