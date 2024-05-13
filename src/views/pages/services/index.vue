@@ -6,6 +6,9 @@
         <website-platform />
         <mobile-app />
         <branding />
+        <design-concept />
+        <social-media />
+        <marketing />
     </div>
 </template>
 
@@ -16,6 +19,9 @@ import WeDo from '@/components/services/we-do.vue';
 import websitePlatform from '@/components/services/website-platform.vue';
 import mobileApp from '@/components/services/mobile-app.vue';
 import branding from '@/components/services/branding.vue';
+import designConcept from '@/components/services/design-concept.vue';
+import socialMedia from '@/components/services/social-media.vue';
+import marketing from '@/components/services/marketing.vue';
 export default{
     components: {
         Hero,
@@ -23,7 +29,10 @@ export default{
         WeDo,
         websitePlatform,
         mobileApp,
-        branding
+        branding,
+        designConcept,
+        socialMedia,
+        marketing
         
     },
   data() {
