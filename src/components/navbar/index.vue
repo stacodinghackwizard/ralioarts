@@ -58,7 +58,7 @@ import { RouterLink } from "vue-router";
               >
             </li>
             <li class="nav-item" @click="HideburgerMenu">
-              <RouterLink to="/about" class="nav-link"
+              <RouterLink to="/website" class="nav-link"
                 ><span>Website</span></RouterLink
               >
             </li>

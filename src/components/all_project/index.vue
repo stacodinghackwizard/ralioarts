@@ -6,103 +6,26 @@
                 <p class="py-0 my-1">Filter</p>
                 <h1 class="my-0 animated slideInDown brand-text"><span class="black">All Projects </span></h1>
             </div>
-            <div class="row  project-align-items">
-                <div class="col-lg-6">
-                  <div class="col-12 projectImg">
-                    <img src="/src/assets/img/project1.png"/>
-                    <div class="flex-row">
-                        <p class="bolder">Muzika - </p> <p class=""><span>Online platform for </span> <span>good music</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 animated fadeIn pt-md-5 brandImg">
-                    <div class="col-12 projectImg pt-md-5">
-                        <img src="/src/assets/img/project2.png"/>
-                        <div class="flex-row">
-                            <p class="bolder">Muzika - </p> <p class=""><span>Online platform for </span> <span>good music</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row project-align-items">
-                <div class="col-lg-6">
-                  <div class="col-12 projectImg">
-                    <img src="/src/assets/img/project3.png"/>
-                    <div class="flex-row">
-                        <p class="bolder">Muzika - </p> <p class=""><span>Online platform for </span> <span>good music</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 animated fadeIn pt-md-5  brandImg">
-                    <div class="col-12 projectImg pt-md-5">
-                        <img src="/src/assets/img/project4.png"/>
-                        <div class="flex-row">
-                            <p class="bolder">Muzika - </p> <p class=""><span>Online platform for </span> <span>good music</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row project-align-items">
-                <div class="col-lg-6">
-                  <div class="col-12 projectImg">
-                    <img src="/src/assets/img/project5.png"/>
-                    <div class="flex-row">
-                        <p class="bolder">Muzika - </p> <p class=""><span>Online platform for </span> <span>good music</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 animated fadeIn pt-md-5  brandImg">
-                    <div class="col-12 projectImg pt-md-5">
-                        <img src="/src/assets/img/project6.png"/>
-                        <div class="flex-row">
-                            <p class="bolder">Muzika - </p> <p class=""><span>Online platform for </span> <span>good music</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row project-align-items">
-                <div class="col-lg-6">
-                  <div class="col-12 projectImg">
-                    <img src="/src/assets/img/project7.png"/>
-                    <div class="flex-row">
-                        <p class="bolder">Muzika - </p> <p class=""><span>Online platform for </span> <span>good music</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 animated fadeIn pt-md-5  brandImg">
-                    <div class="col-12 projectImg pt-md-5">
-                        <img src="/src/assets/img/project8.png"/>
-                        <div class="flex-row">
-                            <p class="bolder">Muzika - </p> <p class=""><span>Online platform for </span> <span>good music</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row project-align-items">
-                <div class="col-lg-6">
-                  <div class="col-12 projectImg">
-                    <img src="/src/assets/img/project9.png"/>
-                    <div class="flex-row">
-                        <p class="bolder">Muzika - </p> <p class=""><span>Online platform for </span> <span>good music</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 animated fadeIn pt-md-5  brandImg">
-                    <div class="col-12 projectImg pt-md-5">
-                        <img src="/src/assets/img/project10.png"/>
-                        <div class="flex-row">
-                            <p class="bolder">Muzika - </p> <p class=""><span>Online platform for </span> <span>good music</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <Project />
         </div>
     </div>
     <!-- Header End -->
 </template>
 
 <script>
+import Project from './project.vue'
 
+export default{
+    components: {
+        Project
+        
+    },
+  data() {
+    return {
+      
+    };
+  },
+}
 </script>
 
 <style scoped>
