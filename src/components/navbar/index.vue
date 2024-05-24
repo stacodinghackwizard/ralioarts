@@ -63,7 +63,7 @@ import { RouterLink } from "vue-router";
               >
             </li>
             <li class="nav-item" @click="HideburgerMenu">
-              <RouterLink to="/career" class="nav-link"
+              <RouterLink to="/mobile-app" class="nav-link"
                 ><span>Apps</span></RouterLink
               >
             </li>

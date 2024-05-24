@@ -10,9 +10,9 @@
 </template>
 
 <script>
-import Hero from '@/components/website/hero.vue'
-import Hero2 from '@/components/website/hero2.vue';
-import WeDo from '@/components/website/we-do.vue';
+import Hero from '@/components/mobile_app/hero.vue'
+import Hero2 from '@/components/mobile_app/hero2.vue';
+import WeDo from '@/components/mobile_app/we-do.vue';
 import CompanyCard from '@/components/home/company-card.vue';
 // import marketing from '@/components/website/marketing.vue'
 

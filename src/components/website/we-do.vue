@@ -55,6 +55,7 @@
                 <div class="col-12 pb-5 text-start">
                     <h1 class="mb-3 animated slideInDown brand-text px-0"><span class="black">Our criteria for an <br/>exceptional site</span></h1>
                 </div>
+                
                 <div class="row gap-bottom">
                     <div class="col-sm-6 mb-3">
                         <div class="card">
@@ -111,11 +112,133 @@
                     </div>
                 </div>
 
-                <div class="col-12 py-5 text-center">
-                    <h1 class="mb-3 animated slideInDown brand-text px-0"><span class="black">we carry out usability <br/>audits and field <br/> supervision</span></h1>
+                
+            </div>
+
+            <div class="col-12 Img py-5">
+                <img src="/src/assets/img/lendHand.png" />
+            </div>
+
+            <div class="">
+                <div class="col-12 pb-3 text-start px-0">
+                    <h1 class="mb-3 animated slideInDown brand-text px-0"><span class="black">The essential stages <br> of developing a site </span></h1>
                 </div>
+                
+                <div class="">
+                    <ol class="row gap-bottom">
+                        <li class="col-sm-6 col-md-4 py-0 my-0">
+                            <div class="">
+                                <div class="card">
+                                    <div class="card-body">
+                                        
+                                        <h5 class="card-title">Research</h5>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-sm-6 col-md-4 py-0 my-0">
+                            <div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        
+                                        <h5 class="card-title">Adaptive design</h5>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-sm-6 col-md-4 py-0 my-0">
+                            <div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        
+                                        <h5 class="card-title">Tight-knit team</h5>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-sm-6 col-md-4 py-0 my-0">
+                            <div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        
+                                        <h5 class="card-title">Tight-knit team</h5>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-sm-6 col-md-4 py-0 my-0">
+                            <div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        
+                                        <h5 class="card-title">Tight-knit team</h5>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-sm-6 col-md-4 py-0 my-0">
+                            <div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        
+                                        <h5 class="card-title">Tight-knit team</h5>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-sm-6 col-md-4 py-0 my-0">
+                            <div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        
+                                        <h5 class="card-title">Tight-knit team</h5>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-sm-6 col-md-4 py-0 my-0">
+                            <div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        
+                                        <h5 class="card-title">Tight-knit team</h5>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-sm-6 col-md-4 py-0 my-0">
+                            <div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        
+                                        <h5 class="card-title">Tight-knit team</h5>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                    
+                </div>
+
+                
+            </div>
+            <div class="col-12 py-5 text-center">
+                <h1 class="mb-3 animated slideInDown brand-text px-0"><span class="black">Have an Idea? <br/>Tell us about it<br/></span></h1>
+            </div>
+            <div class="col-12 py-5 text-left px-0">
+                <h1 class="mb-3 animated slideInDown brand-text px-0"><span class="black">We work with people <br> from all over the world</span></h1>
             </div>
         </div>
+
             
         
     </div>
