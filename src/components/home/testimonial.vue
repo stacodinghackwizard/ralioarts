@@ -1,184 +1,204 @@
 <template>
-   <!-- TESTIMONIALS -->
-<section class="testimonials">
-	<div class="container">
-
-      <div class="row">
-        <div class="col-sm-12">
-          <div id="customers-testimonials" class="owl-carousel">
-
-            <!--TESTIMONIAL 1 -->
-            <div class="item">
-              <div class="shadow-effect">
-                <img class="img-circle" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg" alt="">
-                <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate.</p>
-              </div>
-              <div class="testimonial-name">EMILIANO AQUILANI</div>
-            </div>
-            <!--END OF TESTIMONIAL 1 -->
-            <!--TESTIMONIAL 2 -->
-            <div class="item">
-              <div class="shadow-effect">
-                <img class="img-circle" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg" alt="">
-                <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate.</p>
-              </div>
-              <div class="testimonial-name">ANNA ITURBE</div>
-            </div>
-            <!--END OF TESTIMONIAL 2 -->
-            <!--TESTIMONIAL 3 -->
-            <div class="item">
-              <div class="shadow-effect">
-                <img class="img-circle" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg" alt="">
-                <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate.</p>
-              </div>
-              <div class="testimonial-name">LARA ATKINSON</div>
-            </div>
-            <!--END OF TESTIMONIAL 3 -->
-            <!--TESTIMONIAL 4 -->
-            <div class="item">
-              <div class="shadow-effect">
-                <img class="img-circle" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg" alt="">
-                <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate.</p>
-              </div>
-              <div class="testimonial-name">IAN OWEN</div>
-            </div>
-            <!--END OF TESTIMONIAL 4 -->
-            <!--TESTIMONIAL 5 -->
-            <div class="item">
-              <div class="shadow-effect">
-                <img class="img-circle" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg" alt="">
-                <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate.</p>
-              </div>
-              <div class="testimonial-name">MICHAEL TEDDY</div>
-            </div>
-            <!--END OF TESTIMONIAL 5 -->
-          </div>
-        </div>
+  <div class="cards-wrapper">
+    <button @click="scrollLeft" class="scroll-button left">&lt;</button>
+    <div
+      class="cards-container  "
+      style="padding-top: 100px; padding-bottom: 100px;"
+      ref="cardsContainer"
+      @mousedown="startDrag"
+      @touchstart="startDrag"
+    >
+      <div
+        class="card col-md-4  col-12"
+        v-for="(card, index) in cards"
+        :key="index"
+        :class="{ 'highlighted': currentIndex === index }"
+        @click="moveToCenter(index)"
+      >
+        <div class="avatar" :style="{ backgroundImage: 'url(' + card.avatar + ')' }"></div>
+        <h3 class="mt-5">{{ card.name }}</h3>
+        <p>{{ card.quote }}</p>
+        <p><strong>{{ card.title }}</strong></p>
+        <p>Rating: {{ card.rating }}</p>
       </div>
-      </div>
-    </section>
-    <!-- END OF TESTIMONIALS -->
-  </template>
-  
-  <!-- <script>
-import { ref } from 'vue';
-import OwlCarousel from 'vue-owl-carousel';
-import 'owl.carousel/dist/assets/owl.carousel.css'; // Add this line to import Owl Carousel CSS
-import 'owl.carousel'; // Add this line to import Owl Carousel JavaScript
+    </div>
+    <button @click="scrollRight" class="scroll-button right">&gt;</button>
+  </div>
+</template>
 
-
-
-
+<script>
 export default {
-  components: {
-    OwlCarousel
-  },
-  setup() {
-    const carouselOptions = ref({
-      loop: true,
-      center: true,
-      items: 3,
-      margin: 0,
-      autoplay: true,
-      dots: true,
-      autoplayTimeout: 8500,
-      smartSpeed: 450,
-      responsive: {
-        0: {
-          items: 1
-        },
-        768: {
-          items: 2
-        },
-        1170: {
-          items: 3
-        }
-      }
-    });
-
+  name: 'CardList',
+  data() {
     return {
-      carouselOptions
+      cards: [
+        {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Abayomi Arigbabu', quote: '“We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.”', title: 'C.E.O mybusinessplanwriters', rating: 5.0 },
+        {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Sherif', quote: '“We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.”', title: 'C.E.O Autocredit', rating: 5.0 },
+        {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Alexandre', quote: '“We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.”', title: 'C.E.O Autocredit', rating: 5.0 },
+        {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'John Doe', quote: 'Innovating the future...', title: 'C.E.O FutureTech', rating: 4.8 },
+        {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Jane Smith', quote: 'Leading the way...', title: 'C.E.O LeadingEdge', rating: 4.9 },
+        {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Michael Johnson', quote: 'Breaking new grounds...', title: 'C.E.O GroundBreakers', rating: 5.0 }
+      ],
+      currentIndex: 1,
+      isDragging: false,
+      startX: 0,
+      scrollLeft: 0
     };
   },
-  mounted() {
-    $(this.$refs.carousel).owlCarousel(this.carouselOptions);
+  methods: {
+    scrollLeft() {
+      if (this.currentIndex > 0) {
+        this.currentIndex--;
+        this.updateScrollPosition();
+      }
+    },
+    scrollRight() {
+      if (this.currentIndex < this.cards.length - 1) {
+        this.currentIndex++;
+        this.updateScrollPosition();
+      }
+    },
+    moveToCenter(index) {
+      this.currentIndex = index;
+      this.updateScrollPosition();
+    },
+    updateScrollPosition() {
+      const container = this.$refs.cardsContainer;
+      const cardWidth = container.clientWidth / 3;
+      const targetScrollLeft = this.currentIndex * cardWidth - cardWidth;
+      container.scrollTo({
+        left: targetScrollLeft,
+        behavior: 'smooth'
+      });
+    },
+    startDrag(event) {
+      this.isDragging = true;
+      this.startX = event.pageX || event.touches[0].pageX;
+      this.scrollLeft = this.$refs.cardsContainer.scrollLeft;
+      document.addEventListener('mousemove', this.onDrag);
+      document.addEventListener('touchmove', this.onDrag);
+      document.addEventListener('mouseup', this.stopDrag);
+      document.addEventListener('touchend', this.stopDrag);
+    },
+    onDrag(event) {
+      if (!this.isDragging) return;
+      const x = event.pageX || event.touches[0].pageX;
+      const walk = (x - this.startX) * 2; // Adjust the multiplier for faster/slower scrolling
+      this.$refs.cardsContainer.scrollLeft = this.scrollLeft - walk;
+    },
+    stopDrag() {
+      this.isDragging = false;
+      document.removeEventListener('mousemove', this.onDrag);
+      document.removeEventListener('touchmove', this.onDrag);
+      document.removeEventListener('mouseup', this.stopDrag);
+      document.removeEventListener('touchend', this.stopDrag);
+      this.updateCurrentIndex();
+    },
+    updateCurrentIndex() {
+      const container = this.$refs.cardsContainer;
+      const cardWidth = container.clientWidth / 3;
+      const middleScroll = container.scrollLeft + container.clientWidth / 2;
+      this.currentIndex = Math.floor(middleScroll / cardWidth);
+      this.updateScrollPosition();
+    }
   }
 };
-</script> -->
+</script>
 
-  
 <style scoped>
-.testimonials{
-    background-color: #F2F5FA;
+.cards-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.shadow-effect {
-		    background: #fff;
-		    padding: 20px;
-		    border-radius: 4px;
-		    text-align: center;
-	border:1px solid #ECECEC;
-		    box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.02);
-		}
-		#customers-testimonials .shadow-effect p {
-		    font-family: inherit;
-		    font-size: 17px;
-		    line-height: 1.5;
-		    margin: 0 0 17px 0;
-		    font-weight: 300;
-		}
-		.testimonial-name {
-		    margin: -17px auto 0;
-		    display: table;
-		    width: auto;
-		    background: #3190E7;
-		    padding: 9px 35px;
-		    border-radius: 12px;
-		    text-align: center;
-		    color: #fff;
-		    box-shadow: 0 9px 18px rgba(0,0,0,0.12), 0 5px 7px rgba(0,0,0,0.05);
-		}
-		#customers-testimonials .item {
-		    text-align: center;
-		    padding: 50px;
-				margin-bottom:80px;
-		    opacity: .2;
-		    -webkit-transform: scale3d(0.8, 0.8, 1);
-		    transform: scale3d(0.8, 0.8, 1);
-		    -webkit-transition: all 0.3s ease-in-out;
-		    -moz-transition: all 0.3s ease-in-out;
-		    transition: all 0.3s ease-in-out;
-		}
-		#customers-testimonials .owl-item.active.center .item {
-		    opacity: 1;
-		    -webkit-transform: scale3d(1.0, 1.0, 1);
-		    transform: scale3d(1.0, 1.0, 1);
-		}
-		.owl-carousel .owl-item img {
-		    transform-style: preserve-3d;
-		    max-width: 90px;
-    		margin: 0 auto 17px;
-		}
-		#customers-testimonials.owl-carousel .owl-dots .owl-dot.active span,
-#customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span {
-		    background: #3190E7;
-		    transform: translate3d(0px, -50%, 0px) scale(0.7);
-		}
-#customers-testimonials.owl-carousel .owl-dots{
-	display: inline-block;
-	width: 100%;
-	text-align: center;
+
+.cards-container {
+  display: flex;
+  overflow: hidden; /* Hide the scrollbar */
+  scroll-snap-type: x mandatory;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  cursor: grab; /* Add cursor for drag indication */
+  user-select: none; /* Prevent text selection during dragging */
+  width: 100%;
 }
-#customers-testimonials.owl-carousel .owl-dots .owl-dot{
-	display: inline-block;
+
+.cards-container:active {
+  cursor: grabbing;
 }
-		#customers-testimonials.owl-carousel .owl-dots .owl-dot span {
-		    background: #3190E7;
-		    display: inline-block;
-		    height: 20px;
-		    margin: 0 2px 5px;
-		    transform: translate3d(0px, -50%, 0px) scale(0.3);
-		    transform-origin: 50% 50% 0;
-		    transition: all 250ms ease-out 0s;
-		    width: 20px;
-		}
+
+.card {
+  
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background: #ccc; /* Default background color */
+  text-align: center;
+  scroll-snap-align: center;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.card.highlighted {
+  background: white; /* Highlighted card background */
+  transform: scale(1.05); /* Slightly larger scale */
+}
+
+
+
+.avatar {
+  position: absolute; /* Position absolute for 50% above */
+  top: -50px; /* 50% above the card */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto 20px;
+  border: 3px solid white; /* Optional: Add border to the avatar */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow to the avatar */
+}
+
+h3 {
+  margin: 10px 0;
+}
+
+p {
+  margin: 5px 0;
+}
+
+strong {
+  display: block;
+  margin-top: 10px;
+}
+
+.scroll-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 5px;
+  opacity: 0.7;
+}
+
+.scroll-button:hover {
+  opacity: 1;
+}
+
+.scroll-button.left {
+  left: 10px;
+}
+
+.scroll-button.right {
+  right: 10px;
+}
 </style>

@@ -1,13 +1,15 @@
 <template>
     <!-- Header Start -->
     <div class="container-fluid hero-header background py-5">
-        <div class="container py-5">
+        <div class="container">
           <div class="">
             <h1 class="py-5 animated slideInDown col-lg-8 approach-text px-0"><span class="black">Our Approach</span></h1>
           </div>
           <div class="card-group gap-5">
             <div class="card">
-              <img src="/src/assets//img/approach1.png" class="card-img-top" alt="...">
+              <div class="card-img-top">
+                <img src="/src/assets/img/search.png" />
+              </div>
               <div class="card-body px-0 pt-5 col-md-9">
                 <h5 class="card-title"><strong>Research</strong></h5>
                 <p class="card-text">We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using. </p>
@@ -15,7 +17,9 @@
               </div>
             </div>
             <div class="card">
-              <img src="/src//assets//img/approach2.png" class="card-img-top" alt="...">
+              <div class="card-img-top">
+                <img src="/src/assets/img/strategize-icon.png" />
+              </div>
               <div class="card-body px-0 pt-5 col-md-9">
                 <h5 class="card-title"><strong>Strategize</strong></h5>
                 <p class="card-text">We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using. </p>
@@ -23,7 +27,9 @@
               </div>
             </div>
             <div class="card">
-              <img src="/src/assets/img/approach3.png" class="card-img-top" alt="...">
+              <div class="card-img-top">
+                <img src="/src/assets/img/implement-icon.png" />
+              </div>
               <div class="card-body px-0 pt-5 col-md-9">
                 <h5 class="card-title"><strong>Implement</strong></h5>
                 <p class="card-text">We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.</p>
@@ -52,6 +58,16 @@
 }
 .carousel-inner {
   padding: 1em;
+}
+.card-img-top{
+  background-color: #e1e1e1;
+  height: 160px;
+  width: 100%;
+  border-radius: 20px !important;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 .carousel-control-prev,
 .carousel-control-next {

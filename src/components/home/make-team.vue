@@ -59,6 +59,7 @@
 .develop{
     font-weight: 100;
 }
+
 .btn-white{
     background-color: #fff;
 }
@@ -105,4 +106,13 @@
     padding: 0;
     margin: 0;
 }
+
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+  }
 </style>

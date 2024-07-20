@@ -7,7 +7,7 @@
         <web-design />
         <app-design />
         <approach />
-        <!-- <Testimonial /> -->
+        <Testimonial />
         <company-card/>
     </div>
     <!-- Header End -->
