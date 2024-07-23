@@ -1,6 +1,6 @@
 <template>
   <div class="cards-wrapper">
-    <button @click="scrollLeft" class="scroll-button left">&lt;</button>
+    <!-- <button @click="scrollLeft" class="scroll-button left">&lt;</button> -->
     <div
       class="cards-container  "
       style="padding-top: 100px; padding-bottom: 100px;"
@@ -19,10 +19,10 @@
         <h3 class="mt-5">{{ card.name }}</h3>
         <p>{{ card.quote }}</p>
         <p><strong>{{ card.title }}</strong></p>
-        <p>Rating: {{ card.rating }}</p>
+        <p> <i class="fa fa-star" aria-hidden="true"></i> {{ card.rating }}</p>
       </div>
     </div>
-    <button @click="scrollRight" class="scroll-button right">&gt;</button>
+    <!-- <button @click="scrollRight" class="scroll-button right">&gt;</button> -->
   </div>
 </template>
 
@@ -32,12 +32,12 @@ export default {
   data() {
     return {
       cards: [
-        {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Abayomi Arigbabu', quote: '“We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.”', title: 'C.E.O mybusinessplanwriters', rating: 5.0 },
-        {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Sherif', quote: '“We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.”', title: 'C.E.O Autocredit', rating: 5.0 },
-        {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Alexandre', quote: '“We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.”', title: 'C.E.O Autocredit', rating: 5.0 },
+        {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Abayomi Arigbabu', quote: '“We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.”', title: 'C.E.O mybusinessplanwriters', rating: '5.0' },
+        {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Sherif', quote: '“We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.”', title: 'C.E.O Autocredit', rating: '5.0' },
+        {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Alexandre', quote: '“We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.”', title: 'C.E.O Autocredit', rating: '5.0' },
         {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'John Doe', quote: 'Innovating the future...', title: 'C.E.O FutureTech', rating: 4.8 },
         {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Jane Smith', quote: 'Leading the way...', title: 'C.E.O LeadingEdge', rating: 4.9 },
-        {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Michael Johnson', quote: 'Breaking new grounds...', title: 'C.E.O GroundBreakers', rating: 5.0 }
+        {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Michael Johnson', quote: 'Breaking new grounds...', title: 'C.E.O GroundBreakers', rating: '5.0' }
       ],
       currentIndex: 1,
       isDragging: false,
@@ -106,6 +106,9 @@ export default {
 </script>
 
 <style scoped>
+.fa-star {
+  color: #FFC564;
+}
 .cards-wrapper {
   position: relative;
   display: flex;
