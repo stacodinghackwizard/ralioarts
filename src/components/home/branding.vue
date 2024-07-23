@@ -8,7 +8,7 @@
                     <p class="animated slideInDown my-5 col-lg-9 px-0">
                         We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using. 
                     </p>
-                    <a href="" class="btn transparent border-dark py-3 px-4 animated slideInDown">Start a Project</a>
+                    <a href="#" class="btn transparent border-dark py-3 px-4 animated slideInDown">Start a Project</a>
                     <div class="brand-footer">
                         <div class="space-between">
                             <a>Logo</a>

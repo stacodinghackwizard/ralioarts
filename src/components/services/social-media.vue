@@ -30,7 +30,7 @@
                         <p class="animated slideInDown  mb-5 pt-3 px-0">
                            Your product shouldn't just be recognizable, it should be usable. We'll help you identify your target audience, track conversions, and increase downloads and user loyalty.
                         </p>
-                        <a href="" class="btn transparent border-dark read-more py-3 px-4 animated slideInDown">Read more</a>
+                        <a href="#" class="btn transparent border-dark read-more py-3 px-4 animated slideInDown">Read more</a>
                         
                     </div>
                 </div>

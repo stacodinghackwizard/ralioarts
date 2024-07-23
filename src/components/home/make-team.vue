@@ -3,20 +3,19 @@
     <div class="hero-header make-team bg-light">
         
             <div class="row align-items-center">
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-sm-12 col-12">
                    <div class="makeTeamImg">
                         <img src="/src//assets/img/make-team.png" />
                    </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-sm-12 col-12">
                     <div class="content-center bg-white">
-                        <div class="col-lg-8">
-                            <h1 class="heading mb-3">We make it all make sense</h1>
+                        <div class="content-wrapper px-5">
+                            <h1 class="heading col-lg-8 mb-3">We make it all make sense</h1>
                             <p>
                                 We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using. We achieve this by our tested and proven approach. We will like to help you on your next project.
                             </p>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -97,6 +96,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
+}
+.content-wrapper {
+    max-width: 90%;
+    text-align: justify;
 }
 .content-center .heading{
     font-weight: 700;
@@ -115,4 +119,48 @@
     position: absolute;
     top: -20px;
   }
+
+
+  @media (max-width: 992px) {
+    .make-team, .makeTeamImg {
+        height: auto;
+    }
+
+    .makeTeamImg img {
+        height: auto;
+        width: 100%;
+    }
+
+    .content-center {
+        height: auto;
+        padding: 40px;
+    }
+
+    .content-wrapper {
+        max-width: 100%;
+    }
+
+    .content-center .heading {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-center .heading {
+        font-size: 24px;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .content-center .heading {
+        font-size: 20px;
+        padding-left: 0;
+    }
+
+    .content-center {
+        padding: 30px;
+        text-align: justify;
+    }
+}
 </style>

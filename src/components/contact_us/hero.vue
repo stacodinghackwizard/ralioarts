@@ -16,20 +16,20 @@
             <div class="brand-footer gap-4">
                 <p class="col-9 px-0">I'm interested in...</p>
                 <div class="space-between">
-                    <a href="" class="btn transparent border-dark py-3 px-4 animated slideInDown">Logo</a>
-                    <a href="" class="btn transparent border-dark py-3 px-4 animated slideInDown">Web Design</a>
-                    <a href="" class="btn transparent border-dark py-3 px-4 animated slideInDown">App Design</a>
-                    <a href="" class="btn transparent border-dark py-3 px-4 animated slideInDown">ASO esperitse</a>
+                    <a href="#" class="btn transparent border-dark py-3 px-4 animated slideInDown">Logo</a>
+                    <a href="#" class="btn transparent border-dark py-3 px-4 animated slideInDown">Web Design</a>
+                    <a href="#" class="btn transparent border-dark py-3 px-4 animated slideInDown">App Design</a>
+                    <a href="#" class="btn transparent border-dark py-3 px-4 animated slideInDown">ASO esperitse</a>
                 </div>
                 <div class="space-between">
-                    <a href="" class="btn transparent border-dark py-3 px-4 animated slideInDown">Illustrations</a>
-                    <a href="" class="btn transparent border-dark py-3 px-4 animated slideInDown">iOS Development</a>
-                    <a href="" class="btn transparent border-dark py-3 px-4 animated slideInDown">Design Concept</a>
+                    <a href="#" class="btn transparent border-dark py-3 px-4 animated slideInDown">Illustrations</a>
+                    <a href="#" class="btn transparent border-dark py-3 px-4 animated slideInDown">iOS Development</a>
+                    <a href="#" class="btn transparent border-dark py-3 px-4 animated slideInDown">Design Concept</a>
                 </div>
                 <div class="space-between">
-                    <a href="" class="btn transparent border-dark py-3 px-4 animated slideInDown">Site from scratch</a>
-                    <a href="" class="btn transparent border-dark py-3 px-4 animated slideInDown">App from scratch</a>
-                    <a href="" class="btn transparent border-dark py-3 px-4 animated slideInDown">Android Development</a>
+                    <a href="#" class="btn transparent border-dark py-3 px-4 animated slideInDown">Site from scratch</a>
+                    <a href="#" class="btn transparent border-dark py-3 px-4 animated slideInDown">App from scratch</a>
+                    <a href="#" class="btn transparent border-dark py-3 px-4 animated slideInDown">Android Development</a>
                 </div>
                 
             </div>
@@ -61,11 +61,11 @@
             <div class="brand-footer gap-4">
                 <p class="col-9 px-0 pb-0">Project budget (USD)</p>
                 <div class="space-between">
-                    <a href="" class="btn transparent border-dark py-3 px-4 animated slideInDown">10K-20K</a>
-                    <a href="" class="btn transparent border-dark py-3 px-4 animated slideInDown">30-40K</a>
-                    <a href="" class="btn transparent border-dark py-3 px-4 animated slideInDown">40-50K</a>
-                    <a href="" class="btn transparent border-dark py-3 px-4 animated slideInDown">50-100K</a>
-                    <a href="" class="btn transparent border-dark py-3 px-4 animated slideInDown">>100K</a>
+                    <a href="#" class="btn transparent border-dark py-3 px-4 animated slideInDown">10K-20K</a>
+                    <a href="#" class="btn transparent border-dark py-3 px-4 animated slideInDown">30-40K</a>
+                    <a href="#" class="btn transparent border-dark py-3 px-4 animated slideInDown">40-50K</a>
+                    <a href="#" class="btn transparent border-dark py-3 px-4 animated slideInDown">50-100K</a>
+                    <a href="#" class="btn transparent border-dark py-3 px-4 animated slideInDown">>100K</a>
                 </div>
                 
                 
@@ -73,7 +73,7 @@
 
             <div class="py-5">
                 <p class="col-9 px-0 pb-0">Add Attachment</p>
-                <a href="" class="btn transparent border-dark py-3 px-4 animated slideInDown">Send request</a>
+                <a href="#" class="btn transparent border-dark py-3 px-4 animated slideInDown">Send request</a>
             </div>
         </div>
     </div>

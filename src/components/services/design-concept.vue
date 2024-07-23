@@ -13,7 +13,7 @@
                         <p class="animated slideInDown  mb-5 pt-3 px-0">
                             So, you have a startup with a limited budget? We’ll make a design concept for a site or mobile application to attract your audience and make your awesome product even more awesome.
                         </p>
-                        <a href="" class="btn transparent border-dark read-more py-3 px-4 animated slideInDown">Read more</a>
+                        <a href="#" class="btn transparent border-dark read-more py-3 px-4 animated slideInDown">Read more</a>
                         
                     </div>
                 </div>

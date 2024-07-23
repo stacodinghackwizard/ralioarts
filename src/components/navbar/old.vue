@@ -553,11 +553,7 @@ nav.scrolled .dropdown_wrapper {
     height: 100%;
   }
   .apply_wrap {
-    /* margin-left: 3rem; */
-    margin: 1rem 0;
-    text-align: center;
-
-
+    margin-left: 0;
     /* padding-bottom: 1em; */
   }
   .apply_wrap ul {
@@ -592,7 +588,6 @@ nav.scrolled .dropdown_wrapper {
     text-decoration: none;
     transition: 0.2s ease-out;
   }
-  
   .apply_wrap ul li a:hover {
     background: transparent !important;
     border: none !important;

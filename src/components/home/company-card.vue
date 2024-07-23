@@ -31,7 +31,7 @@
             </div>
 
                 <p class="card-text">“We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.”</p>
-                <a href="" class="btn transparent border-dark  px-4 py-3 animated slideInDown">Check out</a>
+                <a href="#" class="btn transparent border-dark  px-4 py-3 animated slideInDown">Check out</a>
             
           </div>
         </div>
@@ -145,7 +145,7 @@
   .bg-blue {
     background-color: #0E2C5A;
     width: 100%;
-    height: 100% !important; /* Adjust as needed */
+    height: 100% !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,25 +154,25 @@
   
   .bg-red {
     background-color: red;
-    height: 100% !important; /* Adjust as needed */
+    height: 100% !important; 
     width: 100%;
   }
   
 
   .card-body-center {
   display: flex;
-  justify-content: center; /* Center the content horizontally */
-  align-items: center; /* Center the content vertically */
-  height: 200px; /* Adjust the height as needed */
+  justify-content: center; 
+  align-items: center; 
+  height: 200px; 
 }
 
 .logo-container {
-  text-align: center; /* Center the logo horizontally */
+  text-align: center; 
 }
 
 .logo-container img {
-  max-width: 100%; /* Ensure the logo does not exceed the container width */
-  max-height: 100%; /* Ensure the logo does not exceed the container height */
+  max-width: 100%; 
+  max-height: 100%; 
 }
 .card-blue{
     background-color: #200E5A;

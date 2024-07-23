@@ -50,8 +50,7 @@ import { RouterLink } from "vue-router";
                                 <!-- <a href="index.html"><img src="/src/assets/img/ralioLogo.png" class="img-fluid" alt="logo"></a> -->
                             </div>
                             <div class="footer-text">
-                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
-                                elit,Lorem ipsum dolor sit amet.</p>
+                                <p>At Ralioarts, we believe in the power of visual storytelling. As a premier graphic design studio, we specialize in creating captivating designs that bring your vision to life.</p>
                             </div>
                             <div class="footer-social-icon">
                                 <span>Follow us</span>
@@ -70,7 +69,7 @@ import { RouterLink } from "vue-router";
                                 <li><RouterLink to="/" class=""
                                     ><span>Home</span></RouterLink
                                   ></li>
-                                <li><a href="#">about</a></li>
+                                <li><a href="#">Branding</a></li>
                                 <li><RouterLink to="/services" class=""
                                     ><span>Services</span></RouterLink
                                   ></li>
@@ -79,7 +78,8 @@ import { RouterLink } from "vue-router";
                                 <li><a href="#">About us</a></li>
                               
                                 <!-- <li><a href="#">Our Services</a></li> -->
-                                <li><a href="#">Expert Team</a></li>
+                                <li><a href="/website">Website</a></li>
+                                <li><a href="/mobile-app">Apps</a></li>
                                 <li><RouterLink to="/all-project" class=""
                                     ><span>All Project</span></RouterLink
                                   ></li>
@@ -89,7 +89,7 @@ import { RouterLink } from "vue-router";
                                     ><span>Contact Us</span></RouterLink
                                   >
                                 </li>
-                                <li><a href="#">Latest News</a></li>
+                                <li><a href="#">Testimonial</a></li>
                             </ul>
                         </div>
                     </div>
@@ -117,22 +117,22 @@ import { RouterLink } from "vue-router";
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 text-center text-lg-left">
                         <div class="copyright-text">
-                            <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p>
+                            <p>Copyright &copy; 2021, All Right Reserved <a href="#">Ralioarts</a></p>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
                         <div class="footer-menu">
                             <ul>
                                 <li><RouterLink to="/" class=""
-                                    ><span>Home</span></RouterLink
+                                    ><span>Policy</span></RouterLink
                                   ></li>
-                                <li><a href="#">Terms</a></li>
+                                <!-- <li><a href="#">Terms</a></li>
                                 <li><a href="#">Privacy</a></li>
                                 <li><a href="#">Policy</a></li>
                                 <li><a href="#">Contact</a></li>
                                 <li><RouterLink to="/all-project" class=""
                                     ><span>All Project</span></RouterLink
-                                  ></li>
+                                  ></li> -->
                             </ul>
                         </div>
                     </div>

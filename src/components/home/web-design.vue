@@ -1,14 +1,14 @@
 <template>
     <!-- Header Start -->
-    <div class="container-fluid hero-header background py-5">
+    <div class="container-fluid hero-header background py-lg-5">
         <div class="container py-5">
-            <div class="row g-5 align-items-top">
+            <div class="row g-0 align-items-top ">
                 <div class="col-lg-6 pt-5">
                     <h1 class="mb-3 animated slideInDown col-lg-8 brand-text px-0"><span class="black">Web design <br/> & Developmet </span></h1>
                     <p class="animated slideInDown my-5 col-lg-9 px-0">
                         We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using. 
                     </p>
-                    <a href="" class="btn transparent border-dark py-3 px-4 animated slideInDown">Start a Project</a>
+                    <a href="#" class="btn transparent border-dark py-3 px-4 animated slideInDown">Start a Project</a>
                     <div class="brand-footer">
                         <div class="space-between">
                             <a>Logo</a>

@@ -32,7 +32,7 @@
 alongside designers, This is crucial in creating fast and responsive
 websites that would excite the audience
                         </p>
-                        <a href="" class="btn transparent border-dark read-more py-3 px-4 animated slideInDown">Read more</a>
+                        <a href="#" class="btn transparent border-dark read-more py-3 px-4 animated slideInDown">Read more</a>
                         
                     </div>
                 </div>
