@@ -67,21 +67,21 @@
 }
 .make-team{
     width: 100%;
-    height: 55vh;
+    height: 50vh;
     /* border-top: 1px solid black; */
     /* border-bottom: 2px solid red; */
     overflow: hidden
 }
 .makeTeamImg{
     width: 100%;
-    height: 55vh;
+    height: 50vh;
     /* border: 1px solid green; */
 }
 
 .makeTeamImg img{
     
     background-repeat: no-repeat;
-    height: 55vh;
+    height: 50vh;
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -89,7 +89,7 @@
 }
 .content-center{
     width: 100%;
-    height: 55vh;
+    height: 50vh;
     /* border: 1px solid blue; */
 
     display: flex;

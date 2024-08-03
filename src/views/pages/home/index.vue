@@ -45,6 +45,6 @@ export default{
 
 <style scoped>
 .hero-header{
-  height: 100vh;
+  height: 100%;
 }
 </style>
