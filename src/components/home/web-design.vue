@@ -58,6 +58,8 @@
 <style scoped>
 .background{
     background-color: #FDF4F5;
+    width: 100%;
+    overflow: hidden;
 }
 .brandImg{
     display: flex;

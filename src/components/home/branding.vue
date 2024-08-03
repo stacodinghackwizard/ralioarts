@@ -2,7 +2,7 @@
     <!-- Header Start -->
     <div class="container-fluid hero-header bg-light py-5">
         <div class="container py-5">
-            <div class="row g-5 align-items-top">
+            <div class="row g-0 align-items-top">
                 <div class="col-lg-5">
                     <h1 class="mb-3 animated slideInDown col-lg-8 brand-text px-0"><span class="black">Branding </span></h1>
                     <p class="animated slideInDown mb-5  col-lg-9 px-0">
@@ -111,6 +111,8 @@
 }
 .bg-light{
     background-color: #F0F5FF !important;
+    width: 100%;
+    overflow: hidden;
 }
 .brand-text{
     font-size: 40px;
