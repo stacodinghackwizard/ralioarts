@@ -2,14 +2,14 @@
   <div class="cards-wrapper">
     <!-- <button @click="scrollLeft" class="scroll-button left">&lt;</button> -->
     <div
-      class="cards-container  "
+      class="cards-container"
       style="padding-top: 100px; padding-bottom: 100px;"
       ref="cardsContainer"
       @mousedown="startDrag"
       @touchstart="startDrag"
     >
       <div
-        class="card col-md-4  col-12"
+        class="card col-md-3  col-12"
         v-for="(card, index) in cards"
         :key="index"
         :class="{ 'highlighted': currentIndex === index }"
@@ -122,9 +122,9 @@ export default {
   scroll-snap-type: x mandatory;
   gap: 20px;
   padding: 20px;
-  background-color: #f5f5f5;
-  cursor: grab; /* Add cursor for drag indication */
-  user-select: none; /* Prevent text selection during dragging */
+  background-color: #F1F7FE;
+  cursor: grab; 
+  user-select: none; 
   width: 100%;
 }
 
@@ -137,15 +137,15 @@ export default {
   padding: 20px;
   margin: 10px;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  background: #ccc; /* Default background color */
+  /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
+  background: rgb(238, 240, 243); /* Default background color */
   text-align: center;
   scroll-snap-align: center;
   transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .card.highlighted {
-  background: white; /* Highlighted card background */
+  background: white; 
   transform: scale(1.05); /* Slightly larger scale */
 }
 

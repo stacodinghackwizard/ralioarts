@@ -7,17 +7,17 @@ import { RouterLink } from "vue-router";
     <footer class="footer-section">
         <div class="container">
             <div class="footer-cta pt-5 pb-5">
-                <div class="row">
+                <div class="row justify-content-between">
                     <div class="col-xl-4 col-md-4 mb-30">
                         <div class="single-cta">
-                            <i class="fas fa-map-marker-alt light-blue"></i>
+                            <!-- <i class="fas fa-map-marker-alt light-blue"></i> -->
                             <div class="cta-text">
-                                <h4>Find us</h4>
-                                <span>1010 Avenue, sw 54321, chandigarh</span>
+                                <h1>Have a business idea?</h1>
+                                <span><a href="/contact-us" class="touch">Get in touch</a>with us</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-md-4 mb-30">
+                    <!-- <div class="col-xl-4 col-md-4 mb-30">
                         <div class="single-cta">
                             <i class="fas fa-phone light-blue"></i>
                             <div class="cta-text">
@@ -25,13 +25,14 @@ import { RouterLink } from "vue-router";
                                 <span>+234 8068524030</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xl-4 col-md-4 mb-30">
+                    </div> -->
+                    <div class="col-xl-4 col-md-4 float-end mb-30">
                         <div class="single-cta">
                             <i class="far fa-envelope-open light-blue"></i>
                             <div class="cta-text">
-                                <h4>Mail us</h4>
-                                <span>info@ralioarts.ng</span>
+                                <!-- <h4>Mail us</h4> -->
+                                <span>info@ralioarts.ng</span><br>
+                                <span>+2348068524030</span>
                             </div>
                         </div>
                     </div>
@@ -39,77 +40,73 @@ import { RouterLink } from "vue-router";
             </div>
             <div class="footer-content pt-5 pb-5">
                 <div class="row">
-                    <div class="col-xl-4 col-lg-4 mb-50">
-                        <div class="footer-widget">
-                            <div class="footer-logo">
-                              <RouterLink class="navbar-brand" to="/" @click="HideburgerMenu">
-                                <!-- <img src="/src/assets/tta-logo.png" alt="Logo" /> -->
-                                <img src="/src/assets/img/ralioLogo.png" class="logo" />
-                                <span class="logo-bg">Ralioarts</span>
-                              </RouterLink>
-                                <!-- <a href="index.html"><img src="/src/assets/img/ralioLogo.png" class="img-fluid" alt="logo"></a> -->
-                            </div>
-                            <div class="footer-text">
-                                <p>At Ralioarts, we believe in the power of visual storytelling. As a premier graphic design studio, we specialize in creating captivating designs that bring your vision to life.</p>
-                            </div>
-                            <div class="footer-social-icon">
-                                <span>Follow us</span>
-                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
-                            </div>
+                  <div class="col-xl-6 col-lg-6 col-md-6 mb-50">
+                    <div class="footer-widget">
+                       
+                        
+                        <div class="subscribe-form">
+                            <form action="#">
+                                <input type="text" placeholder="Email Address">
+                                <button class="light-blue-bg"><i class="fab fa-telegram-plane"></i></button>
+                            </form>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                        <div class="footer-widget">
-                            <div class="footer-widget-heading">
-                                <h3>Useful Links</h3>
+                  </div>
+                    
+                  <div class="col-xl-6 col-lg-6 col-md-6 mb-30">
+                    <div class="footer-widget">
+                        
+                        <div class="row">
+                            <div class="col-md-4">
+                                <ul>
+                                    <li><RouterLink to="/"><span>Facebook</span></RouterLink></li>
+                                    <li><a href="#">Instagram</a></li>
+                                    <li><RouterLink to="/services"><span>Dribble</span></RouterLink></li>
+                                    <li><a href="#">Twitter</a></li>
+                                </ul>
                             </div>
-                            <ul>
-                                <li><RouterLink to="/" class=""
-                                    ><span>Home</span></RouterLink
-                                  ></li>
-                                <li><a href="#">Branding</a></li>
-                                <li><RouterLink to="/services" class=""
-                                    ><span>Services</span></RouterLink
-                                  ></li>
-                                <li><a href="#">portfolio</a></li>
-                                <!-- <li><a href="#">Contact</a></li> -->
-                                <li><a href="#">About us</a></li>
-                              
-                                <!-- <li><a href="#">Our Services</a></li> -->
-                                <li><a href="/website">Website</a></li>
-                                <li><a href="/mobile-app">Apps</a></li>
-                                <li><RouterLink to="/all-project" class=""
-                                    ><span>All Project</span></RouterLink
-                                  ></li>
-                                <li>
+                            <div class="col-md-4">
+                                <ul>
+                                    <li><a href="#">Behance</a></li>
+                                    <!-- <li><a href="/website">Website</a></li>
+                                    <li><a href="/mobile-app">Apps</a></li>
+                                    <li><RouterLink to="/all-project"><span>All Project</span></RouterLink></li> -->
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                  </div>
 
-                                  <RouterLink to="/contact-us" class=""
-                                    ><span>Contact Us</span></RouterLink
-                                  >
-                                </li>
-                                <li><a href="#">Testimonial</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                        <div class="footer-widget">
-                            <div class="footer-widget-heading">
-                                <h3>Subscribe</h3>
-                            </div>
-                            <div class="footer-text mb-25">
-                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
-                            </div>
-                            <div class="subscribe-form">
-                                <form action="#">
-                                    <input type="text" placeholder="Email Address">
-                                    <button class="light-blue-bg"><i class="fab fa-telegram-plane"></i></button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
+            </div>
+            <div class="footer-content py-5">
+              <div class="row">
+
+                <div class="col-xl-12 col-lg-12 col-md-12">
+                  <div class="footer-widget">
+
+                    <ul class="  d-flex justify-content-between">
+                        <li><RouterLink to="/"><span>Home</span></RouterLink></li>
+                        <li><a href="#">Branding</a></li>
+                        <li><RouterLink to="/services"><span>Services</span></RouterLink></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="/contact-us">Contact us</a></li>
+                        <li><a href="/website">Website</a></li>
+                        <li><a href="/mobile-app">Apps</a></li>
+                        <li><RouterLink to="/all-project"><span>All Project</span></RouterLink></li>
+                    </ul>
+                  </div>
+                                     
+    
+    
+    
+                </div>
+              </div>
+
             </div>
         </div>
         <div class="copyright-area">
@@ -155,6 +152,10 @@ ul {
 .footer-cta {
   border-bottom: 1px solid #373636;
 }
+.touch{
+  color: #59D4BE;
+  padding-right: 10px;
+}
 .single-cta i {
   color: #ff5e14;
   font-size: 30px;
@@ -165,7 +166,7 @@ ul {
   padding-left: 15px;
   display: inline-block;
 }
-.cta-text h4 {
+.cta-text h4, .cta-text h1 {
   color: #fff;
   font-size: 20px;
   font-weight: 600;

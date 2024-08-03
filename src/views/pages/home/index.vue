@@ -1,7 +1,7 @@
 <template>
     <!-- Header Start -->
     <div>
-        <Hero/>
+        <Hero class="hero-header"/>
         <MakeTeam />
         <Branding />
         <web-design />
@@ -42,3 +42,9 @@ export default{
   },
 }
 </script>
+
+<style scoped>
+.hero-header{
+  height: 100vh;
+}
+</style>

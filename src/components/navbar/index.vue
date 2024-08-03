@@ -93,7 +93,7 @@ onUnmounted(() => {
 
           <div class="apply_wrap" style="border-radius: 20px">
             <ul>
-              <li><RouterLink to="/apply-now">Start a Project</RouterLink></li>
+              <li><RouterLink to="/contact-us">Start a Project</RouterLink></li>
             </ul>
           </div>
         </div>

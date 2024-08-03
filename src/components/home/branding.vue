@@ -5,10 +5,10 @@
             <div class="row g-5 align-items-top">
                 <div class="col-lg-5">
                     <h1 class="mb-3 animated slideInDown col-lg-8 brand-text px-0"><span class="black">Branding </span></h1>
-                    <p class="animated slideInDown my-5 col-lg-9 px-0">
+                    <p class="animated slideInDown mb-5  col-lg-9 px-0">
                         We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using. 
                     </p>
-                    <a href="#" class="btn transparent border-dark py-3 px-4 animated slideInDown">Start a Project</a>
+                    <a href="#" class="btn transparent border-dark py-3 px-4 animated slideInDown start-project-btn">Start a Project</a>
                     <div class="brand-footer">
                         <div class="space-between">
                             <a>Logo</a>
@@ -113,8 +113,6 @@
     background-color: #F0F5FF !important;
 }
 .brand-text{
-    
-    
     font-size: 40px;
     font-weight: 600;
 }
@@ -145,8 +143,6 @@
     flex-direction: column;
     margin-top: 40px;
     gap: 10px;
-    /* padding: 20px; */
-    /* display: block; */
 }
 .case{
     display: flex;
@@ -156,6 +152,52 @@
 .case-link{
     color: #2866E0;
     border-bottom: 2px solid #2866E0;
+}
+
+/* Hover animation for the Start a Project button */
+.start-project-btn {
+    position: relative;
+    overflow: hidden;
+    color: black; 
+    background-color: transparent;
+    transition: color 0.3s ease;
+    padding: 12px 24px;
+    font-weight: 600;
+    border: 2px solid black;
+    text-align: center;
+    display: inline-block;
+}
+
+.start-project-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2866E0; 
+    color: #fff;
+    transition: transform 0.3s ease;
+    transform: scaleX(0);
+    transform-origin: left;
+    z-index: 0;
+}
+
+.start-project-btn:hover::before {
+    transform: scaleX(1);
     
 }
+
+.start-project-btn:hover {
+    color: #fff !important; 
+  
+    
+
+}
+
+.start-project-btn span {
+    position: relative;
+    z-index: 1;
+}
+
 </style>

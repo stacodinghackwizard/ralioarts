@@ -11,7 +11,7 @@
                 <div class="col-lg-6 col-sm-12 col-12">
                     <div class="content-center bg-white">
                         <div class="content-wrapper px-5">
-                            <h1 class="heading col-lg-8 mb-3">We make it all make sense</h1>
+                            <h1 class="heading col-lg-6 mb-3 px-0">We make it all make sense</h1>
                             <p>
                                 We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using. We achieve this by our tested and proven approach. We will like to help you on your next project.
                             </p>
@@ -67,21 +67,21 @@
 }
 .make-team{
     width: 100%;
-    height: 75vh;
+    height: 55vh;
     /* border-top: 1px solid black; */
     /* border-bottom: 2px solid red; */
     overflow: hidden
 }
 .makeTeamImg{
     width: 100%;
-    height: 75vh;
+    height: 55vh;
     /* border: 1px solid green; */
 }
 
 .makeTeamImg img{
     
     background-repeat: no-repeat;
-    height: 75vh;
+    height: 55vh;
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -89,7 +89,7 @@
 }
 .content-center{
     width: 100%;
-    height: 75vh;
+    height: 55vh;
     /* border: 1px solid blue; */
 
     display: flex;
@@ -100,11 +100,15 @@
 }
 .content-wrapper {
     max-width: 90%;
-    text-align: justify;
+    
 }
 .content-center .heading{
     font-weight: 700;
     font-size: 38px;
+}
+.content-wrapper p{
+    font-size: 16px;
+    font-weight: 200;
 }
 .col-lg-6{
     padding: 0;

@@ -1,39 +1,42 @@
 <template>
     <!-- Header Start -->
-    <div class="container-fluid pr-0 hero-header background pt-lg-5 pl-lg-5">
-        <div class="container-fluid no-padding">
-            <div class="row g-5 align-items-top">
-                <div class="col-lg-6 pt-5 left-content pr-sm-3">
-                    <h1 class="mb-lg-3 pb-sm-0 mb-sm-0 animated slideInDown brand-text col-lg-8 ml-0 pl-0"><span class="black">Mobile App Design</span></h1>
-                    <p class="animated col-lg-9 px-0 slideInDown my-5">
-                        We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.
-                    </p>
-                    <a href="#" class="btn transparent border-dark py-3 px-4 animated slideInDown">Start a Project</a>
-                    <div class="brand-footer">
-                        <div class="space-between">
-                            <a>Logo</a>
-                            <a>Typography</a>
-                            <a>Visual composition</a>
-                        </div>
-                        <div class="space-between">
-                            <a>Stationary</a>
-                            <a>Pattern</a>
-                        </div>
-                        <div class="space-between">
-                            <a>Logdkdd</a>
-                            <a>Multimedia</a>
-                        </div>
-                    </div>
-                    <div class="case">
-                        <a href="#" class="case-link">Check Case Studies</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 pr-0 mr-0 right-content animated fadeIn">
-                    <img class="img-fluid animated pulse infinite" src="/src/assets/img/mobileDesign.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
+     <div class="background">
+
+         <div class="container-fluid appImg hero-header mt-lg-5  ">
+             <div class="container py-5">
+                 <div class="row g-0 align-items-top">
+                     <div class="col-lg-6 pt-5 ">
+                         <h1 class="mb-lg-3 pb-sm-0 mb-sm-0 animated slideInDown brand-text col-lg-8 ml-0 pl-0"><span class="black">Mobile App Design</span></h1>
+                         <p class="animated col-lg-9 px-0 slideInDown my-5">
+                             We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.
+                         </p>
+                         <a href="#" class="btn transparent border-dark py-3 px-4 animated slideInDown">Start a Project</a>
+                         <div class="brand-footer">
+                             <div class="space-between">
+                                 <a>Logo</a>
+                                 <a>Typography</a>
+                                 <a>Visual composition</a>
+                             </div>
+                             <div class="space-between">
+                                 <a>Stationary</a>
+                                 <a>Pattern</a>
+                             </div>
+                             <div class="space-between">
+                                 <a>Logdkdd</a>
+                                 <a>Multimedia</a>
+                             </div>
+                         </div>
+                         <div class="case">
+                             <a href="#" class="case-link">Check Case Studies</a>
+                         </div>
+                     </div>
+                     <!-- <div class="col-lg-6  pr-0 mr-0 right-content animated fadeIn">
+                         <img class="img-fluid animated pulse infinite" src="/src/assets/img/mobileDesign.png" alt="">
+                     </div> -->
+                 </div>
+             </div>
+         </div>
+     </div>
     <!-- Header End -->
 </template>
 
@@ -49,13 +52,30 @@ export default {
     width: 100%;
     overflow: hidden; /* Ensure no overflow */
 }
+.appImg{
+    background-image: url('/src/assets/img/mobileDesign.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    display: block;
+    
+}
+@media (max-width: 1000px) {
+    .appImg{
+        background-image: url('');
+        background-repeat: no-repeat;
+        background-position: right;
+        display: block;
+    
+    
+    }
+}
 
 .container-fluid.no-padding {
-    padding-right: 0; /* Remove padding from container */
+    padding-right: 0;
 }
 
 .row.g-0 {
-    margin: 0; /* Remove margin from row */
+    margin: 0; 
 }
 
 .left-content {
@@ -64,9 +84,9 @@ export default {
 
 .right-content {
     display: flex;
-    justify-content: flex-end; /* Align image to the end */
-    align-items: flex-end; /* Align image to the bottom */
-    padding-right: 0; /* Remove right padding from right content */
+    justify-content: flex-end; 
+    align-items: flex-end;
+    padding-right: 0; 
     margin-right: 0;
 }
 
@@ -77,14 +97,14 @@ export default {
 
 @media (max-width: 1000px) {
     .right-content {
-        justify-content: center; /* Center the image on smaller screens */
+        justify-content: center; 
     }
 }
 
 @media (max-width: 800px) {
     .brandImgAbso,
     .brandImg3 {
-        display: none; /* Hide additional images on smaller screens */
+        display: none; 
     }
 }
 
