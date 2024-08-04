@@ -70,7 +70,7 @@ onUnmounted(() => {
         <div class="collapse navbar-collapse" id="tta-nav">
           <ul class="navbar-nav nav ml-auto">
             <li class="nav-item" @click="HideburgerMenu">
-              <RouterLink to="/about" class="nav-link">
+              <RouterLink to="/branding" class="nav-link">
                 <span>Branding</span>
               </RouterLink>
             </li>
@@ -232,8 +232,8 @@ onUnmounted(() => {
     top: 0;
     padding-top: 0;
     padding-bottom: 0;
-    padding-left: 0px;
-    padding-right: 0px;
+    /* padding-left: 0px;
+    padding-right: 0px; */
   }
 }
 

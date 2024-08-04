@@ -15,94 +15,38 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 Img py-5">
-                <img src="/src/assets/img/mobileHero2.png" />
+            <div class="col-12 Img">
+                <img src="/src/assets/img/brandingHero2.png" />
             </div>
-
-            <div class="">
-                <div class="col-12 pb-5 text-start px-0">
-                    <h1 class="mb-3 animated slideInDown brand-text px-0"><span class="black">Development <br/>milestones</span></h1>
+            <div class="row py-4 px-0 mx-0">
+                <div class="col-md-6 col-sm-12 content-center">
+                    <h4>
+                        <strong>What’s possible <br/>
+                            and how</strong>
+                    </h4>
                 </div>
-                
-                <div class="row gap-bottom px-0">
-                    <div class="col-sm-6 mb-3 px-0">
-                        <div class="card">
-                            <div class="card-body">
-                                <!-- <div class="marketImg">
+                <div class="col-md-5 col-sm-12 content-center">
+                    <p>
+                        The only thing that matters in a brand is what you feel when interacting with a product. When we talk about branding, we mean the vital link between your product and the user.
 
-                                    <img src="/src/assets/img/time-zone.png" />
-                                </div> -->
-                                <h5 class="card-title col-md-4 px-0">Research and
-development</h5>
-                                <p class="card-text">During this phase, we help you finalize the 
-functions list, prepare the technical 
-requirements, and develop the application 
-architecture with a roadmap of interactivity 
-(UX). We can also make an interactive 
-prototype and test it with a focus group.</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 mb-3 px-0">
-                        <div class="card">
-                            <div class="card-body">
-                                
-                                <h5 class="card-title col-md-4 px-0">Design and 
-animation</h5>
-                                <p class="card-text">During this phase, we help you finalize the 
-functions list, prepare the technical 
-requirements, and develop the application 
-architecture with a roadmap of interactivity 
-(UX). We can also make an interactive 
-prototype and test it with a focus group.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 mb-3 px-0">
-                        <div class="card">
-                            <div class="card-body">
-                                
-                                <h5 class="card-title col-md-4 px-0">
-                                    Problem solving</h5>
-                                    <p class="card-text">During this phase, we help you finalize the 
-functions list, prepare the technical 
-requirements, and develop the application 
-architecture with a roadmap of interactivity 
-(UX). We can also make an interactive 
-prototype and test it with a focus group.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 mb-3 px-0">
-                        <div class="card">
-                            <div class="card-body ">
-                                
-                                <h5 class="card-title col-md-4 px-0">Contemporary approach</h5>
-                                <p class="card-text">During this phase, we help you finalize the 
-functions list, prepare the technical 
-requirements, and develop the application 
-architecture with a roadmap of interactivity 
-(UX). We can also make an interactive 
-prototype and test it with a focus group.</p>
-                            </div>
-                        </div>
-                    </div>
+                    </p>
+                    <p>
+
+                        To make your brand recognizable, we develop the logotype, corporate identity, manual, brand book, mockups, and souvenir products. These essential components coalesce into your unique brand which tells your story and makes all the right connections.
+                    </p>
                 </div>
-
-                
             </div>
-
-
-            
+            <div class="col-12 Img mb-5">
+                <img src="/src/assets/img/brandingHero3.png" />
+            </div>
             <div class="py-5">
 
                 <div class="col-lg-6 px-0 content-center">
                     <div class="">
-                        <h6 class=" animated slideInDown  brand-text px-0">Our Work </h6>
-                        <!-- <p class="animated slideInDown  mb-5 pt-3 px-0">
-                            To see us in action, explore our work. Our internationally acclaimed, award-winning projects lift us above the crowd.
-                        </p> -->
+                        <h6 class="mb-3 animated slideInDown  brand-text px-0">Our Work </h6>
+                        <p class="animated slideInDown  mb-5 pt-3 px-0">
+                            In recent years, we have developed an approach that includes not only the creation of visual images, but also a strategy for launching and promoting your brand.
+                        </p>
                        
                     </div>
                 </div>
@@ -113,16 +57,13 @@ prototype and test it with a focus group.</p>
 
 
             
-
-            
-
-            
             <div class="col-12 py-5 text-center">
                 <h1 class="mb-3 animated slideInDown brand-text px-0"><span class="black">Have an Idea? <br/>Tell us about it<br/></span></h1>
             </div>
             <div class="col-12 py-5 text-left px-0">
                 <h1 class="mb-3 animated slideInDown brand-text px-0"><span class="black">We work with people <br> from all over the world</span></h1>
             </div>
+           
         </div>
 
             

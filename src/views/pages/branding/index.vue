@@ -13,14 +13,14 @@
 </template>
 
 <script>
-import Hero from '@/components/website/hero.vue'
-import Hero2 from '@/components/website/hero2.vue';
-import WeDo from '@/components/website/we-do.vue';
+import Hero from '@/components/branding/hero.vue'
+import Hero2 from '@/components/branding/hero2.vue';
+import WeDo from '@/components/branding/we-do.vue';
 import CompanyCard from '@/components/home/company-card.vue';
 import TestimonyTest from '@/components/branding/testimony.vue';
 import Testimonial from '@/components/home/testimonial.vue';
 import OtherService from '@/components/otherService.vue'
-// import marketing from '@/components/website/marketing.vue'
+// import marketing from '@/components/branding/marketing.vue'
 
 export default{
     components: {

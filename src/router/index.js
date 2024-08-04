@@ -5,7 +5,7 @@ import AllProject from '../views/pages/all_project/index.vue'
 import Services from '../views/pages/services/index.vue'
 import Website from '../views/pages/webite/index.vue'
 import MobileApp from '../views/pages/mobile_app/index.vue'
-
+import Branding from '../views/pages/branding/index.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -38,6 +38,11 @@ const router = createRouter({
       path: '/mobile-app',
       name: 'MobileApp',
       component: MobileApp
+    },
+    {
+      path: '/branding',
+      name: 'Branding',
+      component: Branding
     },
     
   ]

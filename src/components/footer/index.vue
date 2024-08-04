@@ -38,8 +38,8 @@ import { RouterLink } from "vue-router";
                     </div>
                 </div>
             </div>
-            <div class="footer-content pt-5 pb-5">
-                <div class="row">
+            <div class="footer-cta footer-links-content pt-5 pb-5">
+                <div class="row gap-3">
                   <div class="col-xl-6 col-lg-6 col-md-6 mb-50">
                     <div class="footer-widget">
                        
@@ -53,19 +53,19 @@ import { RouterLink } from "vue-router";
                     </div>
                   </div>
                     
-                  <div class="col-xl-6 col-lg-6 col-md-6 mb-30">
+                  <div class="col-xl-5 col-lg-5 col-md-5 mb-30">
                     <div class="footer-widget">
                         
                         <div class="row">
-                            <div class="col-md-4">
-                                <ul>
+                            <div class="col">
+                                <ul class="">
                                     <li><RouterLink to="/"><span>Facebook</span></RouterLink></li>
                                     <li><a href="#">Instagram</a></li>
                                     <li><RouterLink to="/services"><span>Dribble</span></RouterLink></li>
                                     <li><a href="#">Twitter</a></li>
                                 </ul>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col">
                                 <ul>
                                     <li><a href="#">Behance</a></li>
                                     <!-- <li><a href="/website">Website</a></li>
@@ -82,10 +82,10 @@ import { RouterLink } from "vue-router";
                     
                 </div>
             </div>
-            <div class="footer-content py-5">
-              <div class="row">
+            <div class="footer-content  py-5">
+              <div class="row footer-links">
 
-                <div class="col-xl-12 col-lg-12 col-md-12">
+                <div class="col-xl-12 col-lg-12 col-md-12 footer-links-width">
                   <div class="footer-widget">
 
                     <ul class="  d-flex justify-content-between">
@@ -148,6 +148,20 @@ ul {
 .footer-section {
   background: #151414;
   position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+@media (max-width: 991.98px) {
+  .footer-section {
+   
+    position: relative;
+    top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    /* padding-left: 0px;
+    padding-right: 0px; */
+  }
 }
 .footer-cta {
   border-bottom: 1px solid #373636;
@@ -197,7 +211,7 @@ ul {
 .footer-text p {
   margin-bottom: 14px;
   font-size: 14px;
-      color: #7e7e7e;
+  color: #7e7e7e;
   line-height: 28px;
 }
 .footer-social-icon span {
@@ -253,7 +267,6 @@ ul {
 }
 .footer-widget ul li a:hover{
   color: #ff5e14;
-  /* color: #4242ab; */
 }
 .footer-widget ul li a {
   color: #878787;
@@ -283,7 +296,7 @@ ul {
   font-size: 22px;
   transform: rotate(-6deg);
 }
-.copyright-area{
+.copyright-area {
   background: #202020;
   padding: 25px 0;
 }
@@ -292,34 +305,34 @@ ul {
   font-size: 14px;
   color: #878787;
 }
-.copyright-text p a{
+.copyright-text p a {
   color: #ff5e14;
 }
 .footer-menu li {
   display: inline-block;
   margin-left: 20px;
 }
-.footer-menu li:hover a{
+.footer-menu li:hover a {
   color: #ff5e14;
 }
 .footer-menu li a {
   font-size: 14px;
   color: #878787;
 }
-.light-blue{
-    color: #2866E0 !important;
+.light-blue {
+  color: #2866E0 !important;
 }
-.light-blue-bg{
+.light-blue-bg {
   background-color: #2866E0 !important;
   border: 1px solid #2866E0 !important;
   outline: 1px solid #2866E0 !important;
 }
-.logo-bg{
+.logo-bg {
   color: #FFF;
   font-size: 17px;
   font-weight: 700;
 }
-.logo{
+.logo {
   width: 30px !important;
   height: 30px;
   margin-right: 10px;
@@ -327,18 +340,22 @@ ul {
 
 .navbar-brand {
   color: #fff;
- 
- 
 }
-
 .navbar-brand:hover,
 .navbar-brand:focus {
   color: #fff !important;
 }
 
 @media (max-width: 991.98px) {
-  .navbar-brand {
-    color: #fff;
+  .footer-links ul {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .footer-links ul li {
+    flex-basis: 48%; /* Make items roughly half-width to allow wrapping */
+    min-width: 150px; /* Prevent items from being too narrow */
   }
 }
+
 </style>

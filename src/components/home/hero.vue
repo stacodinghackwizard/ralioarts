@@ -1,12 +1,12 @@
 <template>
   <!-- Header Start -->
   <div class="container-fluid hero-header bg-light py-5">
-    <div class="container pt-0 mt-0">
-      <div class="row g-5 align-items-center pb-3">
-        <div class="col-lg-7 pt-0 mt-0" style="margin-top: ;">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-7 pt-0 mt-0" style="margin-top: ">
           
           <h1 class="mb-3 animated slideInDown col-lg-9 brand-text px-0">
-            <span class="semi-bold">Get your brand the best hands on</span><br>
+            <span class="semi-bold brand">Get your brand the best hands on</span><br>
             <transition name="slide-fade">
               <span class="light-blue" v-if="currentBrandText">
                 {{ currentBrandText.lightBlue }}
@@ -162,10 +162,28 @@ export default defineComponent({
 </script>
 <style scoped>
 .semi-bold{
-  font-family: ;
+ 
   color: #1F2123;
   font-size: 54px;
 }
+@media screen and (max-width: 900px) {
+    .hero-header{
+      height: 100vh;
+      width: 100%;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+    }
+    .hero-header .container{
+      /* padding-top: 55px; */
+    }
+    .brand-text .brand{
+      font-size: 40px;
+      font-weight: 600;
+    }
+}
+
+
 
 .fa-star {
   color: green;

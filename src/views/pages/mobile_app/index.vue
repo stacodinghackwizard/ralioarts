@@ -4,6 +4,9 @@
         <hero-2 />
         <we-do />
         <company-card/>
+        <testimony-test/>
+        <Testimonial />
+        <other-service />
         <!-- <marketing /> -->
         
     </div>
@@ -14,6 +17,9 @@ import Hero from '@/components/mobile_app/hero.vue'
 import Hero2 from '@/components/mobile_app/hero2.vue';
 import WeDo from '@/components/mobile_app/we-do.vue';
 import CompanyCard from '@/components/home/company-card.vue';
+import TestimonyTest from '@/components/branding/testimony.vue';
+import Testimonial from '@/components/home/testimonial.vue';
+import OtherService from '@/components/otherService.vue'
 // import marketing from '@/components/website/marketing.vue'
 
 export default{
@@ -21,7 +27,10 @@ export default{
         Hero,
         Hero2,
         WeDo,
-        CompanyCard
+        CompanyCard,
+        TestimonyTest,
+        Testimonial,
+        OtherService
         
         
     },

@@ -67,29 +67,29 @@
 }
 .make-team{
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     /* border-top: 1px solid black; */
     /* border-bottom: 2px solid red; */
     overflow: hidden
 }
 .makeTeamImg{
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     /* border: 1px solid green; */
 }
 
 .makeTeamImg img{
     
     background-repeat: no-repeat;
-    height: 50vh;
+    height: 60vh;
     width: 100%;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 .content-center{
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     /* border: 1px solid blue; */
 
     display: flex;

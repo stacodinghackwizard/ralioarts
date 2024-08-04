@@ -1,17 +1,9 @@
 <template>
     <!-- Header Start -->
-    <div class="container-fluid hero-header px-0 bg-img py-5">
-        <div class="container">
-            <div class="">
-                <div class="col-lg-12 hero2">
-                    <!-- <img src="/src//assets//img//websiteImg1.png" /> -->
-                    <!-- <h5 class=""><strong>Ralioarts</strong></h5>
-                    <div class="file-icon my-5"><i class="fas fa-cloud-upload" aria-hidden="true"></i></div>
-                    <span class="glad">We are glad that you're here</span> -->
-                </div>
-                
-            </div>
-        </div>
+    <div class="container-fluid hero-header px-0 mx-0 bg-img py-5">
+        <!-- <div class="container">
+         
+        </div> -->
     </div>
     <!-- Header End -->
 </template>
@@ -22,7 +14,7 @@
 
 <style scoped>
 .bg-img{
-    background-image: url('/src/assets/img/mobileAppHero.png');
+    background-image: url('/src/assets/img/brandingHero.png');
     background-position: center;
     height: 40vh;
     width: 100%;
