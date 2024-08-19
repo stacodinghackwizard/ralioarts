@@ -1,29 +1,30 @@
 <template>
-  <div class="cards-wrapper">
-    <!-- <button @click="scrollLeft" class="scroll-button left">&lt;</button> -->
-    <div
-      class="cards-container"
-      style="padding-top: 100px; padding-bottom: 100px;"
-      ref="cardsContainer"
-      @mousedown="startDrag"
-      @touchstart="startDrag"
-    >
-      <div
-        class="card col-md-3  col-12"
-        v-for="(card, index) in cards"
-        :key="index"
-        :class="{ 'highlighted': currentIndex === index }"
-        @click="moveToCenter(index)"
-      >
-        <div class="avatar" :style="{ backgroundImage: 'url(' + card.avatar + ')' }"></div>
-        <h3 class="mt-5">{{ card.name }}</h3>
-        <p>{{ card.quote }}</p>
-        <p><strong>{{ card.title }}</strong></p>
-        <p> <i class="fa fa-star" aria-hidden="true"></i> {{ card.rating }}</p>
-      </div>
+  <section>
+
+    <div class="cards-wrapper cards-container card2" style="padding-top: 100px; padding-bottom: 100px;"
+    ref="cardsContainer">
+      <!-- <button @click="scrollLeft" class="scroll-button left">&lt;</button> -->
+      
+        <div
+          class="card"
+          v-for="(card, index) in cards"
+          :key="index"
+          :class="{ 'highlighted': currentIndex === index }"
+          @click="moveToCenter(index)"
+        >
+          <div class="avatar" :style="{ backgroundImage: 'url(' + card.avatar + ')' }"></div>
+          <h3 class="mt-5">{{ card.name }}</h3>
+          <p>{{ card.quote }}</p>
+          <div class="display-flex2">
+
+            <p><strong>{{ card.title }}</strong></p>
+            <p> <i class="fa fa-star" aria-hidden="true"></i> {{ card.rating }}</p>
+          </div>
+        </div>
+     
+      <!-- <button @click="scrollRight" class="scroll-button right">&gt;</button> -->
     </div>
-    <!-- <button @click="scrollRight" class="scroll-button right">&gt;</button> -->
-  </div>
+  </section>
 </template>
 
 <script>
@@ -32,12 +33,16 @@ export default {
   data() {
     return {
       cards: [
-        {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Abayomi Arigbabu', quote: '“We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.”', title: 'C.E.O mybusinessplanwriters', rating: '5.0' },
-        {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Sherif', quote: '“We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.”', title: 'C.E.O Autocredit', rating: '5.0' },
-        {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Alexandre', quote: '“We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.”', title: 'C.E.O Autocredit', rating: '5.0' },
-        {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'John Doe', quote: 'Innovating the future...', title: 'C.E.O FutureTech', rating: 4.8 },
-        {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Jane Smith', quote: 'Leading the way...', title: 'C.E.O LeadingEdge', rating: 4.9 },
-        {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Michael Johnson', quote: 'Breaking new grounds...', title: 'C.E.O GroundBreakers', rating: '5.0' }
+      {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Sherif', quote: '“We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.”', title: 'C.E.O Autocredit', rating: '5.0' },
+      {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Sherif', quote: '“We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.”', title: 'C.E.O Autocredit', rating: '5.0' },
+      {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Sherif', quote: '“We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.”', title: 'C.E.O Autocredit', rating: '5.0' },
+      {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Sherif', quote: '“We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.”', title: 'C.E.O Autocredit', rating: '5.0' },
+      {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Sherif', quote: '“We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.”', title: 'C.E.O Autocredit', rating: '5.0' },
+      {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Sherif', quote: '“We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.”', title: 'C.E.O Autocredit', rating: '5.0' },
+      {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Sherif', quote: '“We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.”', title: 'C.E.O Autocredit', rating: '5.0' },
+      {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Sherif', quote: '“We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.”', title: 'C.E.O Autocredit', rating: '5.0' },
+      {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Sherif', quote: '“We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.”', title: 'C.E.O Autocredit', rating: '5.0' },
+      {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Sherif', quote: '“We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.”', title: 'C.E.O Autocredit', rating: '5.0' },
       ],
       currentIndex: 1,
       isDragging: false,
@@ -135,8 +140,9 @@ export default {
 .card {
   
   padding: 20px;
+ 
   margin: 10px;
-  border-radius: 10px;
+  border-radius: 18px;
   /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
   background: rgb(238, 240, 243); /* Default background color */
   text-align: center;
@@ -204,4 +210,65 @@ strong {
 .scroll-button.right {
   right: 10px;
 }
+
+
+
+
+:root {
+  --page-margin: min(2rem, 5vw);
+  color: #444;
+}
+
+section {
+  display: grid;
+  grid-template-columns: var(--page-margin) [center-start] 1fr [center-end] var(--page-margin);
+  
+  & > * {
+    grid-column: center;
+  }
+}
+
+.cards-wrapper {
+  grid-column: center-start / -1;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1rem;
+  overflow-x: auto; /* Allow horizontal scrolling */
+  overflow-y: hidden; /* Hide vertical scrollbar, just in case */
+  padding-bottom: 1rem;
+  padding-right: var(--page-margin);
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+.cards-wrapper::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+.card2 .card {
+  display: grid;
+  place-content: center;
+  background-color: #fff;
+  border: 1px solid #E3EAF3 !important;
+
+  /* color: #15928A; */
+  /* font-size: 1.5rem; */
+  height: 20rem;
+  min-width: 21rem;
+  cursor: pointer;
+ 
+}
+.display-flex2{
+  display: flex;
+  
+  justify-content: space-between !important;
+  align-items: center !important;
+  text-align: center !important;
+  padding-top: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 100%;
+}
+
+
 </style>
