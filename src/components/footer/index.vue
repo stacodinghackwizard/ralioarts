@@ -13,7 +13,7 @@ import { RouterLink } from "vue-router";
                             <!-- <i class="fas fa-map-marker-alt light-blue"></i> -->
                             <div class="cta-text">
                                 <h1>Have a business idea?</h1>
-                                <span><a href="/contact-us" class="touch">Get in touch</a>with us</span>
+                                <span class="px-0 mx-0" style="display: flex;flex-wrap: wrap; align-items: center;" ><RouterLink to="/contact-us" class="nav-link">Get in touch</RouterLink>with us</span>
                             </div>
                         </div>
                     </div>
@@ -59,9 +59,9 @@ import { RouterLink } from "vue-router";
                         <div class="row">
                             <div class="col">
                                 <ul class="">
-                                    <li><RouterLink to="/"><span>Facebook</span></RouterLink></li>
+                                    <li><a href="#"><span>Facebook</span></a></li>
                                     <li><a href="#">Instagram</a></li>
-                                    <li><RouterLink to="/services"><span>Dribble</span></RouterLink></li>
+                                    <li><a href="#"><span>Dribble</span></a></li>
                                     <li><a href="#">Twitter</a></li>
                                 </ul>
                             </div>
@@ -90,13 +90,13 @@ import { RouterLink } from "vue-router";
 
                     <ul class="  d-flex justify-content-between">
                         <li><RouterLink to="/"><span>Home</span></RouterLink></li>
-                        <li><a href="#">Branding</a></li>
+                        <li><RouterLink to="/branding">Branding</RouterLink></li>
                         <li><RouterLink to="/services"><span>Services</span></RouterLink></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="/contact-us">Contact us</a></li>
-                        <li><a href="/website">Website</a></li>
-                        <li><a href="/mobile-app">Apps</a></li>
+                        <li><RouterLink to="/">Testimonial</RouterLink></li>
+                        <li><RouterLink to="/">About us</RouterLink></li>
+                        <li><RouterLink to="/contact-us">Contact us</RouterLink></li>
+                        <li><RouterLink to="/website">Website</RouterLink></li>
+                        <li><RouterLink to="/mobile-app">Apps</RouterLink></li>
                         <li><RouterLink to="/all-project"><span>All Project</span></RouterLink></li>
                     </ul>
                   </div>

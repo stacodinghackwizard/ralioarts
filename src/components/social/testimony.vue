@@ -1,67 +1,10 @@
 <template>
     <!-- Header Start -->
     <div class="bg-white container-fluid">
-        <div class="container">
-            <div class="py-2">
-
-                <div class="col-lg-5 px-0 content-center">
-                    <div class="">
-    
-                        <p class="animated slideInDown  mb-5 pt-3 px-0">
-                            Our job is to get necessary information to the user as seamlessly and effortlessly as possible through effective marketing and communication campaigns.
-                        </p>
-                        <a href="#" class="btn transparent border-dark read-more py-3 px-4 animated slideInDown">Let's work together</a>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 Img">
-                <img src="/src/assets/img/brandingHero2.png" />
-            </div>
-            <div class="row py-4 px-0 mx-0">
-                <div class="col-md-6 col-sm-12 content-center">
-                    <h4>
-                        <strong>What’s possible <br/>
-                            and how</strong>
-                    </h4>
-                </div>
-                <div class="col-md-5 col-sm-12 content-center">
-                    <p>
-                        The only thing that matters in a brand is what you feel when interacting with a product. When we talk about branding, we mean the vital link between your product and the user.
-
-                    </p>
-                    <p>
-
-                        To make your brand recognizable, we develop the logotype, corporate identity, manual, brand book, mockups, and souvenir products. These essential components coalesce into your unique brand which tells your story and makes all the right connections.
-                    </p>
-                </div>
-            </div>
-            <div class="col-12 Img mb-5">
-                <img src="/src/assets/img/brandingHero3.png" />
-            </div>
-            <div class="py-5">
-
-                <div class="col-lg-6 px-0 content-center">
-                    <div class="">
-                        <h6 class="mb-3 animated slideInDown  brand-text px-0">Our Work </h6>
-                        <p class="animated slideInDown  mb-5 pt-3 px-0">
-                            In recent years, we have developed an approach that includes not only the creation of visual images, but also a strategy for launching and promoting your brand.
-                        </p>
-                       
-                    </div>
-                </div>
-            </div>
-            <div class="py-5">
-                <Project />
-            </div>
-
-
-            
-            <div class="col-12 py-5 text-center">
-                <h1 class="mb-3 animated slideInDown brand-text px-0"><span class="black">Have an Idea? <br/>Tell us about it<br/></span></h1>
-            </div>
+        <div class="container py-5">
+           
             <div class="col-12 py-5 text-left px-0">
-                <h1 class="mb-3 animated slideInDown brand-text px-0"><span class="black">We work with people <br> from all over the world</span></h1>
+                <h1 class="mb-3 animated slideInDown brand-text px-0"><span class="black">Testimonials</span></h1>
             </div>
            
         </div>

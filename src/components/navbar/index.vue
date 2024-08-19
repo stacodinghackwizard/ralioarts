@@ -85,7 +85,7 @@ onUnmounted(() => {
               </RouterLink>
             </li>
             <li class="nav-item" @click="HideburgerMenu">
-              <RouterLink to="/scholarship" class="nav-link">
+              <RouterLink to="/social" class="nav-link">
                 <span>Socials</span>
               </RouterLink>
             </li>

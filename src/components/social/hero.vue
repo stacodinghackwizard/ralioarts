@@ -4,9 +4,8 @@
         <div class="container py-5">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6">
-                    <h5 class="mb-3">Product Branding</h5>
-                    <h1 class="mb-3 animated slideInDown col-lg-11 brand-text px-0"><span class="black">Develop your brand with
-                        a novel strategy </span></h1>
+                    <h5 class="mb-3">Social Media Designs</h5>
+                    <h1 class="mb-3 animated slideInDown col-lg-11 brand-text px-0"><span class="black">Design that Visible for all </span></h1>
                     
                 </div>
                 

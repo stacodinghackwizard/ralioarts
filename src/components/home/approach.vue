@@ -2,41 +2,87 @@
     <!-- Header Start -->
     <div class="container-fluid hero-header background py-5">
         <div class="container">
-          <div class="">
-            <h1 class="py-5 animated slideInDown col-lg-8 approach-text px-0"><span class="black">Our Approach</span></h1>
-          </div>
-          <div class="card-group gap-5">
-            <div class="card">
-              <div class="card-img-top">
-                <img src="/src/assets/img/search.png" />
-              </div>
-              <div class="card-body px-0 pt-5 col-md-9">
-                <h5 class="card-title"><strong>Research</strong></h5>
-                <p class="card-text">We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using. </p>
-                
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-img-top">
-                <img src="/src/assets/img/strategize-icon.png" />
-              </div>
-              <div class="card-body px-0 pt-5 col-md-9">
-                <h5 class="card-title"><strong>Strategize</strong></h5>
-                <p class="card-text">We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using. </p>
-               
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-img-top">
-                <img src="/src/assets/img/implement-icon.png" />
-              </div>
-              <div class="card-body px-0 pt-5 col-md-9">
-                <h5 class="card-title"><strong>Implement</strong></h5>
-                <p class="card-text">We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.</p>
-                
-              </div>
+          <div class="py-5">
+
+            <div class="col-lg-12 px-0 text-center">
+                <div class="text-center display-center">
+                    <h6 class="mb-3 animated slideInDown  approach-text px-0">Our Approach </h6>
+                    <p class="animated slideInDown text-center col-md-7  pt-3 px-0">
+                      We blend creativity with strategy, starting with understanding your needs and goals. Through collaborative brainstorming and meticulous planning, we prioritize user experience and innovative design to deliver stunning and high-performing projects from concept to execution.
+                    </p>
+                  
+                </div>
             </div>
           </div>
+         
+         
+
+          <section>
+           
+            <div class="cards-wrapper card-group  card2">
+              <div class="card">
+                <div class="card-img-top">
+                  <img src="/src/assets/img/search.png" />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"><strong>Research</strong></h5>
+                  <p class="card-text">We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using. </p>
+                  
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-img-top">
+                  <img src="/src/assets/img/strategize-icon.png" />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"><strong>Strategize</strong></h5>
+                  <p class="card-text">We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using. </p>
+                
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-img-top">
+                  <img src="/src/assets/img/implement-icon.png" />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"><strong>Implement</strong></h5>
+                  <p class="card-text">We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.</p>
+                  
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-img-top">
+                  <img src="/src/assets/img/search.png" />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"><strong>Research</strong></h5>
+                  <p class="card-text">We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using. </p>
+                  
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-img-top">
+                  <img src="/src/assets/img/strategize-icon.png" />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"><strong>Strategize</strong></h5>
+                  <p class="card-text">We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using. </p>
+                
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-img-top">
+                  <img src="/src/assets/img/implement-icon.png" />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"><strong>Implement</strong></h5>
+                  <p class="card-text">We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.</p>
+                  
+                </div>
+              </div>
+              
+            </div>
+          </section>
         </div>
     </div>
     <!-- Header End -->
@@ -60,14 +106,15 @@
   padding: 1em;
 }
 .card-img-top{
-  background-color: #e1e1e1;
-  height: 160px;
+  /* background-color: #e1e1e1; */
+  height: 60px;
   width: 100%;
   border-radius: 20px !important;
-  text-align: center;
-  justify-content: center;
+  text-align: left;
+  justify-content: left;
   display: flex;
-  align-items: center;
+  align-items: left;
+  padding-left: 15px;
 }
 .carousel-control-prev,
 .carousel-control-next {
@@ -117,4 +164,65 @@
 .black{
     color: #000;
 }
+.brand-text{
+    
+    
+    font-size: 40px;
+    font-weight: 600;
+}
+.display-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+:root {
+  --page-margin: min(2rem, 5vw);
+  color: #444;
+}
+
+section {
+  display: grid;
+  grid-template-columns: var(--page-margin) [center-start] 1fr [center-end] var(--page-margin);
+  
+  & > * {
+    grid-column: center;
+  }
+}
+
+.cards-wrapper {
+  grid-column: center-start / -1;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1rem;
+  overflow-x: auto; /* Allow horizontal scrolling */
+  overflow-y: hidden; /* Hide vertical scrollbar, just in case */
+  padding-bottom: 1rem;
+  padding-right: var(--page-margin);
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+.cards-wrapper::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+.card2 .card {
+  display: grid;
+  place-content: center;
+  background-color: #fff;
+  border: 1px solid #E3EAF3 !important;
+  /* color: #15928A; */
+  /* font-size: 1.5rem; */
+  height: 20rem;
+  min-width: 19rem;
+  cursor: pointer;
+  border-radius: 5px !important;
+}
+.card2 .card:hover{
+  background-color: #F1F7FE;
+  transition: all 0.5s ease-in-out;
+}
+
 </style>

@@ -3,14 +3,11 @@
   <div class="container-fluid hero-header bg-light py-5">
     <div class="container">
       <div class="row g-5 align-items-center">
-        <div class="col-lg-7 pt-0 mt-0" style="margin-top: ">
-          
+        <div class="col-lg-7 pt-0 mt-0">
           <h1 class="mb-3 animated slideInDown col-lg-9 brand-text px-0">
             <span class="semi-bold brand">Get your brand the best hands on</span><br>
             <transition name="slide-fade">
-              <span class="light-blue" v-if="currentBrandText">
-                {{ currentBrandText.lightBlue }}
-              </span>
+               <span class="changeText typeContent light-blue">{{ displayText }}</span>
             </transition>
           </h1>
           <p class="animated slideInDown space-between develop my-5">
@@ -41,19 +38,8 @@
             >
               <div class="message-avatar">
                 <img :src="message.avatar" alt="avatar" class="avatar" :style="{ right: message.avatarRight, left: message.avatarLeft }" />
-                <!-- <span class="message-name" :style="{ left: message.avaterNameLeft, right: message.avaterNameRight }">{{ message.name }}</span> -->
               </div>
-              <!-- <div class="message">
-                <span class="message-text">{{ message.text }}</span>
-                <div class="mt-2" :style="{ display: message.starNone }">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                </div>
-              </div> -->
             </div>
-            <!-- <img src="/src/assets/img/mobile1.png" /> -->
           </div>
         </div>
       </div>
@@ -69,6 +55,18 @@ import { defineComponent } from 'vue';
 export default defineComponent({
   data() {
     return {
+      
+
+
+      wordList: ["Ui/Ux Design", "Visual Branding", "Web Design"],
+      displayText: "",
+      wordIndex: 0,
+      charIndex: 0,
+      isDeleting: false,
+      currentIndex: 0,
+      typingSpeed: 150, // Speed of typing each character
+      pauseDuration: 1000, // Pause duration before switching content
+      currentInterval: null,
       brandTextContent: [
         { black: 'Get your brand the best hands on', lightBlue: 'Ui/Ux Design' },
         { black: 'Boost your brand with expert', lightBlue: 'Visual Branding' },
@@ -96,8 +94,7 @@ export default defineComponent({
           { id: 9, text: "Wow!!! 🥰, I love this you guys are amazing", name: 'S.T.A', avatarLeft: '-25px', avaterNameLeft: '50px', backgroundColor: '#2866E0', top: '400px', right: '60px', position: 'right', avatar: new URL('@/assets/img/clientImg.png', import.meta.url).href }
         ]
       ],
-      currentIndex: 0,
-      intervalId: null
+     
     };
   },
   computed: {
@@ -112,14 +109,38 @@ export default defineComponent({
     }
   },
   mounted() {
-    this.intervalId = setInterval(this.changeContent, 5000);
+    this.startTypingAnimation();
   },
   beforeUnmount() {
-    clearInterval(this.intervalId);
+    clearInterval(this.currentInterval);
   },
   methods: {
+    startTypingAnimation() {
+      this.currentInterval = setInterval(this.typingEffect, this.typingSpeed);
+    },
+    typingEffect() {
+      const currentWord = this.wordList[this.wordIndex];
+      if (this.isDeleting) {
+        this.displayText = currentWord.substring(0, this.charIndex--);
+        if (this.charIndex < 0) {
+          this.isDeleting = false;
+          this.wordIndex = (this.wordIndex + 1) % this.wordList.length;
+          this.charIndex = 0;
+          clearInterval(this.currentInterval);
+          this.currentInterval = setTimeout(this.startTypingAnimation, this.pauseDuration);
+        }
+      } else {
+        this.displayText = currentWord.substring(0, this.charIndex++);
+        if (this.charIndex === currentWord.length) {
+          this.isDeleting = true;
+          clearInterval(this.currentInterval);
+          this.currentInterval = setTimeout(this.startTypingAnimation, this.pauseDuration);
+          this.changeContent(); // Change content after typing is complete
+        }
+      }
+    },
     changeContent() {
-      this.currentIndex = (this.currentIndex + 1) % 3;
+      this.currentIndex = (this.currentIndex + 1) % this.messagesContent.length;
     },
     startDrag(event, index) {
       this.draggingIndex = index;
@@ -156,8 +177,30 @@ export default defineComponent({
       document.removeEventListener('mousemove', this.onDrag);
       document.removeEventListener('mouseup', this.stopDrag);
       this.draggingIndex = null;
-    }
-  }
+    },
+    typeText() {
+      if (this.isReverseTyping) {
+        this.displayText = this.displayText.slice(0, this.displayText.length - 1);
+        if (this.displayText.length === 0) {
+          this.wordIndex = 0;
+          this.isReverseTyping = false;
+          this.i++;
+          if (this.i === this.wordList.length - 1) {
+            this.i = 0;
+          }
+        }
+      } else {
+        this.displayText += this.wordList[this.i][this.wordIndex++];
+        if (this.wordIndex === this.wordList[this.i].length) {
+          this.isReverseTyping = true;
+        }
+      }
+    },
+  },
+
+  beforeDestroy() {
+    clearInterval(this.typingInterval);
+  },
 });
 </script>
 <style scoped>
@@ -310,5 +353,25 @@ export default defineComponent({
 .slide-fade-leave-to {
   transform: translateY(-100%);
   opacity: 0;
+}
+
+
+
+.auto-typing-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 10%;
+  font-size: 20px;
+}
+.typeContentH1 {
+  color: rgb(255, 183, 0);
+}
+.typeContent {
+  /* color: rgb(255, 255, 255); */
+}
+.typeContent::after {
+  content: "|";
 }
 </style>
