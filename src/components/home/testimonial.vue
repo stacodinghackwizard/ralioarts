@@ -34,13 +34,13 @@ export default {
     return {
       cards: [
       {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Sherif', quote: '“We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.”', title: 'C.E.O Autocredit', rating: '5.0' },
-      {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Sherif', quote: '“We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.”', title: 'C.E.O Autocredit', rating: '5.0' },
-      {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Sherif', quote: '“We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.”', title: 'C.E.O Autocredit', rating: '5.0' },
-      {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Sherif', quote: '“We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.”', title: 'C.E.O Autocredit', rating: '5.0' },
-      {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Sherif', quote: '“We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.”', title: 'C.E.O Autocredit', rating: '5.0' },
-      {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Sherif', quote: '“We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.”', title: 'C.E.O Autocredit', rating: '5.0' },
-      {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Sherif', quote: '“We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.”', title: 'C.E.O Autocredit', rating: '5.0' },
-      {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Sherif', quote: '“We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.”', title: 'C.E.O Autocredit', rating: '5.0' },
+      {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Alexandra', quote: '“We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.”', title: 'C.E.O Autocredit', rating: '5.0' },
+      {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Abayomi Arigbabu', quote: '“We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.”', title: 'C.E.O Autocredit', rating: '5.0' },
+      {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Ralio', quote: '“We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.”', title: 'C.E.O Autocredit', rating: '5.0' },
+      {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Sanni', quote: '“We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.”', title: 'C.E.O Autocredit', rating: '5.0' },
+      {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Don', quote: '“We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.”', title: 'C.E.O Autocredit', rating: '5.0' },
+      {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'RalioArts', quote: '“We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.”', title: 'C.E.O Autocredit', rating: '5.0' },
+      {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Abayomi Arigbabu', quote: '“We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.”', title: 'C.E.O Autocredit', rating: '5.0' },
       {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Sherif', quote: '“We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.”', title: 'C.E.O Autocredit', rating: '5.0' },
       {  avatar: new URL('@/assets/img/sheriff-profile.png', import.meta.url).href, name: 'Sherif', quote: '“We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.”', title: 'C.E.O Autocredit', rating: '5.0' },
       ],
@@ -88,7 +88,7 @@ export default {
     onDrag(event) {
       if (!this.isDragging) return;
       const x = event.pageX || event.touches[0].pageX;
-      const walk = (x - this.startX) * 2; // Adjust the multiplier for faster/slower scrolling
+      const walk = (x - this.startX) * 2;
       this.$refs.cardsContainer.scrollLeft = this.scrollLeft - walk;
     },
     stopDrag() {
@@ -233,7 +233,7 @@ section {
   display: grid;
   grid-auto-flow: column;
   gap: 1rem;
-  overflow-x: auto; /* Allow horizontal scrolling */
+  overflow-x: auto; 
   overflow-y: hidden; /* Hide vertical scrollbar, just in case */
   padding-bottom: 1rem;
   padding-right: var(--page-margin);

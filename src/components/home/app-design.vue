@@ -6,8 +6,8 @@
              <div class="container py-5">
                  <div class="row g-0 align-items-top">
                      <div class="col-lg-6 pt-5 px-0 ">
-                         <h1 class="mb-lg-3 pb-sm-0 mb-sm-0 animated slideInDown brand-text col-lg-8 ml-0 pl-0"><span class="black">Mobile App Design</span></h1>
-                         <p class="animated col-lg-9 px-0 slideInDown my-5">
+                         <h1 class="mb-3  animated slideInDown brand-text col-lg-8 ml-0 pl-0"><span class="black">Mobile App Design</span></h1>
+                         <p class="animated col-lg-9 px-0 slideInDown mb-5">
                              We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using.
                          </p>
                          <a href="#" class="btn transparent border-dark py-3 px-4 animated slideInDown">Start a Project</a>

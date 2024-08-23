@@ -177,8 +177,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #2866E0; 
-    color: #fff;
+    /* background-color: #2866E0;  */
+    color: #fff !important;
     transition: transform 0.3s ease;
     transform: scaleX(0);
     transform-origin: left;
@@ -191,7 +191,7 @@
 }
 
 .start-project-btn:hover {
-    color: #fff !important; 
+    /* color: #fff !important;  */
   
     
 
