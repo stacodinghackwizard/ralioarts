@@ -3,7 +3,7 @@
     <div class="row no-gutters">
       <div class="col-md-3">
         <div class="column">
-          <div class="card card-blue clickable-card" @click="selectImage('/src/assets/img/workLogo1.png')">
+          <div class="card card-blue clickable-card" @click="selectImage('/public/workLogo1.png')">
             <div class="card-body card-body-center">
               <!-- Logo Container -->
               <div class="logo-container">
@@ -12,7 +12,7 @@
               </div>
             </div>
           </div>
-          <div class="card clickable-card" style="background-color: #DCE2C6;" @click="selectImage('/src/assets/img/crownbirth.png')">
+          <div class="card clickable-card" style="background-color: #DCE2C6;" @click="selectImage('/public/crownbirth.png')">
             <div class="card-body card-body-center">
               <!-- Logo Container -->
               <div class="logo-container">
@@ -40,7 +40,7 @@
 
       <div class="col-md-3">
         <div class="column">
-          <div class="card clickable-card" style="background-color: #FFF1EF;" @click="selectImage('/src/assets/img/birdViewLogo.png')">
+          <div class="card clickable-card" style="background-color: #FFF1EF;" @click="selectImage('/public/birdViewLogo.png')">
             <div class="card-body card-body-center">
               <!-- Logo Container -->
               <div class="logo-container">
@@ -49,7 +49,7 @@
               </div>
             </div>
           </div>
-          <div class="card clickable-card" style="background-color: #282A65;" @click="selectImage('/src/assets/img/autocreditLogo.png')">
+          <div class="card clickable-card" style="background-color: #282A65;" @click="selectImage('/public/autocreditLogo.png')">
             <div class="card-body card-body-center">
               <!-- Logo Container -->
               <div class="logo-container">

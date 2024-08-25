@@ -7,6 +7,7 @@ import Website from '../views/pages/webite/index.vue'
 import MobileApp from '../views/pages/mobile_app/index.vue'
 import Branding from '../views/pages/branding/index.vue'
 import Social from '../views/pages/social/index.vue'
+import AboutUs from '../views/pages/about_us/index.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -49,6 +50,11 @@ const router = createRouter({
       path: '/social',
       name: 'Social',
       component: Social
+    },
+    {
+      path: '/about-us',
+      name: 'AboutUs',
+      component: AboutUs
     },
     
   ]

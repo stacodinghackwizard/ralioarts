@@ -8,12 +8,12 @@ import { RouterLink } from "vue-router";
         <div class="container">
             <div class="footer-cta pt-5 pb-5">
                 <div class="row justify-content-between">
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
+                    <div class="col-xl-4 col-md-4 col-sm-6 px-0 mb-30">
+                        <div class="single-cta ">
                             <!-- <i class="fas fa-map-marker-alt light-blue"></i> -->
                             <div class="cta-text">
                                 <h1>Have a business idea?</h1>
-                                <span class="px-0 mx-0" style="display: flex;flex-wrap: wrap; align-items: center;" ><RouterLink to="/contact-us" class="nav-link">Get in touch</RouterLink>with us</span>
+                                <span class="px-0 mx-0" style="display: flex;flex-wrap: wrap;font-size: 20px; align-items: center;" ><RouterLink to="/contact-us" class="nav-link pl-0" style="color: #59D4BE; text-decoration: underline">Get in touch</RouterLink>with us</span>
                             </div>
                         </div>
                     </div>
@@ -26,9 +26,9 @@ import { RouterLink } from "vue-router";
                             </div>
                         </div>
                     </div> -->
-                    <div class="col-xl-4 col-md-4 float-end mb-30">
-                        <div class="single-cta">
-                            <i class="far fa-envelope-open light-blue"></i>
+                    <div class="col-xl-4 col-md-4 col-sm-6 mb-30">
+                        <div class="single-cta float-end">
+                            <i class="far fa-envelope-open" style="color: #59D4BE;"></i>
                             <div class="cta-text">
                                 <!-- <h4>Mail us</h4> -->
                                 <span>info@ralioarts.ng</span><br>
@@ -39,40 +39,46 @@ import { RouterLink } from "vue-router";
                 </div>
             </div>
             <div class="footer-cta footer-links-content pt-5 pb-5">
-                <div class="row gap-3">
-                  <div class="col-xl-6 col-lg-6 col-md-6 mb-50">
+                <div class="row ">
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-50">
                     <div class="footer-widget">
                        
                         
                         <div class="subscribe-form">
                             <form action="#">
-                                <input type="text" placeholder="Email Address">
-                                <button class="light-blue-bg"><i class="fab fa-telegram-plane"></i></button>
+                                <input type="text" class="subscribe-input" placeholder="johndoe@sample.com">
+                                <!-- <button class="light-blue-bg"><i class="fab fa-telegram-plane"></i></button> -->
+                                <button class="bg-white border-white bold">Subscribe</button>
                             </form>
                         </div>
                     </div>
                   </div>
                     
-                  <div class="col-xl-5 col-lg-5 col-md-5 mb-30">
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 ">
                     <div class="footer-widget">
                         
-                        <div class="row">
-                            <div class="col">
-                                <ul class="">
-                                    <li><a href="#"><span>Facebook</span></a></li>
-                                    <li><a href="#">Instagram</a></li>
-                                    <li><a href="#"><span>Dribble</span></a></li>
-                                    <li><a href="#">Twitter</a></li>
+                        <div class=" float-end" >
+                            <div class="">
+                                <ul class="row gap-3">
+                                    <li class="col">
+                                      <ul class="column" style="display: flex;flex-direction: column;">
+                                        <li><a href="#"><span>Facebook</span></a></li>
+                                        <li class=""><a href="#">Twitter</a></li>
+                                       
+                                      </ul>
+                                    </li>
+                                    <li class="col">
+                                      <ul class="column" style="display: flex;flex-direction: column;">
+                                        <li class=""><a href="#">Instagram</a></li>
+                                        <li><a href="#">Behance</a></li>
+                                      </ul>
+                                    </li>
+                                    
+                                    <li class="col"><a href="#"><span>Dribble</span></a></li>
+                                    
                                 </ul>
                             </div>
-                            <div class="col">
-                                <ul>
-                                    <li><a href="#">Behance</a></li>
-                                    <!-- <li><a href="/website">Website</a></li>
-                                    <li><a href="/mobile-app">Apps</a></li>
-                                    <li><RouterLink to="/all-project"><span>All Project</span></RouterLink></li> -->
-                                </ul>
-                            </div>
+                            
                             
                         </div>
                         
@@ -93,7 +99,7 @@ import { RouterLink } from "vue-router";
                         <li><RouterLink to="/branding">Branding</RouterLink></li>
                         <li><RouterLink to="/services"><span>Services</span></RouterLink></li>
                         <li><RouterLink to="/">Testimonial</RouterLink></li>
-                        <li><RouterLink to="/">About us</RouterLink></li>
+                        <li><RouterLink to="/about-us">About us</RouterLink></li>
                         <li><RouterLink to="/contact-us">Contact us</RouterLink></li>
                         <li><RouterLink to="/website">Website</RouterLink></li>
                         <li><RouterLink to="/mobile-app">Apps</RouterLink></li>
@@ -114,7 +120,7 @@ import { RouterLink } from "vue-router";
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 text-center text-lg-left">
                         <div class="copyright-text">
-                            <p>Copyright &copy; 2021, All Right Reserved <a href="#">Ralioarts</a></p>
+                            <p>&copy; 2021 <a href="#">Ralioarts</a>, All Right Reserved</p>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
@@ -152,6 +158,7 @@ ul {
   left: 0;
   right: 0;
 }
+
 @media (max-width: 991.98px) {
   .footer-section {
    
@@ -356,6 +363,11 @@ ul {
     flex-basis: 48%; /* Make items roughly half-width to allow wrapping */
     min-width: 150px; /* Prevent items from being too narrow */
   }
+}
+
+.subscribe-input{
+  background-color: #fff !important;
+  color: #2E2E2E !important;
 }
 
 </style>

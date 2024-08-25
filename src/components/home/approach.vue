@@ -15,8 +15,6 @@
             </div>
           </div>
          
-         
-
           <section>
            
             <div class="cards-wrapper card-group  card2">

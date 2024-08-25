@@ -11,7 +11,7 @@
                 <div class="col-lg-6 col-sm-12 col-12">
                     <div class="content-center bg-white">
                         <div class="content-wrapper px-5">
-                            <h1 class="heading col-lg-8 mb-3 px-0">We make it all make sense</h1>
+                            <h1 class="heading col-lg-8 mb-3 px-0">We make it all<br/> make sense</h1>
                             <p>
                                 We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using. We achieve this by our tested and proven approach. We will like to help you on your next project.
                             </p>
