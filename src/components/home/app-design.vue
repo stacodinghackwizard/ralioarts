@@ -3,7 +3,7 @@
      <div class="background">
 
          <div class="appImg hero-header mt-lg-5  ">
-             <div class="container-fluid px-lg-5 py-lg-5 py-md-5 pb-sm-5">
+             <div class="container-fluid px-lg-5 py-lg-5">
                  <div class="row g-0 align-items-top">
                      <div class="col-lg-6 pt-5 px-0 ">
                          <h1 class="mb-3  animated slideInDown brand-text col-lg-8 ml-0 pl-0"><span class="black">Mobile App Design</span></h1>
@@ -105,6 +105,9 @@ export default {
     .brandImgAbso,
     .brandImg3 {
         display: none; 
+    }
+    .hero-header{
+        padding-bottom: 40px;
     }
 }
 

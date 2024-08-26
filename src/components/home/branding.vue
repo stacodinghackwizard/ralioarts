@@ -1,7 +1,7 @@
 <template>
     <!-- Header Start -->
-    <div class=" hero-header bg-light py-5">
-        <div class="container-fluid px-lg-5 py-lg-5">
+    <div class=" hero-header bg-light py-lg-5">
+        <div class="container-fluid px-lg-5 py-lg-5 ">
             <div class="row g-0 align-items-top">
                 <div class="col-lg-5">
                     <h1 class="mb-3 animated slideInDown col-lg-8 brand-text px-0" ><span class="black">Branding </span></h1>
@@ -102,6 +102,9 @@
         /* position: absolute;
         right: -10%;
         top: 50%; */
+    }
+    .hero-header{
+        padding-bottom: 40px;
     }
 }
 

@@ -27,12 +27,12 @@ import { RouterLink } from "vue-router";
                         </div>
                     </div> -->
                     <div class="col-lg-3 col-md-3 col-sm-6 mb-30">
-                        <div class="single-cta float-end">
+                        <div class="single-cta info-flex">
                             <!-- <i class="far fa-envelope-open" style="color: #59D4BE;"></i> -->
                             <div class="cta-text">
                                 <!-- <h4>Mail us</h4> -->
-                                <span style="font-size: 33px">info@ralioarts.ng</span><br>
-                                <span style="font-size: 33px">+2348068524030</span>
+                                <span>info@ralioarts.ng</span><br>
+                                <span >+2348068524030</span>
                             </div>
                         </div>
                     </div>
@@ -159,7 +159,7 @@ ul {
 }
 @media screen and (max-width: 900px) {
    
-   .footer-touch {
+   .footer-touch, .info-flex span {
      font-size: 28px !important;
      
    }
@@ -177,16 +177,19 @@ ul {
     }
     
 }
-.footer-social{
+.footer-social, .info-flex{
   float: right !important;
 }
 .footer-social li{
   font-size: 21px;
 }
+.info-flex span{
+  font-size: 33px !important;
+}
 @media screen and (max-width: 900px) {
    
    
-   .footer-social{
+   .footer-social, .info-flex{
     float: left !important;
      margin-top: 20px;
    }

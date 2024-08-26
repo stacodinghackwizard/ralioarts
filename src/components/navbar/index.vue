@@ -48,7 +48,7 @@ onUnmounted(() => {
       class="px-0"
       id="tta-navbar"
     >
-      <div class="container-fluid px-lg-5">
+      <div class="container-fluid px-lg-5 sm-space">
         <RouterLink class="navbar-brand" to="/" @click="HideburgerMenu">
           <img src="/src/assets/img/headerLogo.svg" class="logo" />
           <span class="logo-bg">Ralioarts</span>
@@ -235,6 +235,9 @@ onUnmounted(() => {
     padding-bottom: 0;
     /* padding-left: 0px;
     padding-right: 0px; */
+  }
+  .sm-space{
+    padding: 0 20px !important;
   }
 }
 

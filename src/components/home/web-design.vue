@@ -1,6 +1,6 @@
 <template>
     <!-- Header Start -->
-    <div class=" hero-header background py-lg-5 py-md-5 pb-sm-5">
+    <div class=" hero-header background py-lg-5">
         <div class="container-fluid px-lg-5 py-lg-5">
             <div class="row g-0 align-items-top ">
                 <div class="col-lg-6 pt-5">
@@ -110,6 +110,9 @@
         /* position: absolute;
         right: -10%;
         top: 50%; */
+    }
+    .hero-header{
+        padding-bottom: 40px;
     }
 }
 
