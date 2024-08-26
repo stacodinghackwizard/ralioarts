@@ -1,7 +1,7 @@
 <template>
     <!-- Header Start -->
     <div class=" hero-header bg-light py-lg-5">
-        <div class="container-fluid px-lg-5   pb-lg-5">
+        <div class="container-fluid px-lg-5   py-lg-5">
             <div class="row g-0 align-items-top">
                 <div class="col-lg-5">
                     <h1 class="mb-3 animated slideInDown col-lg-8 brand-text px-0" ><span class="black">Branding </span></h1>
@@ -33,12 +33,12 @@
                             <img class="img-fluid animated pulse infinite" style="animation-duration: 3s;" src="/src//assets//img/branding-img.png"
                                 alt="">
                         </div>
-                        <div class="brandImgAbso">
+                        <!-- <div class="brandImgAbso">
                             <img src="/src//assets/img/branding-img2.png" />
                         </div>
                         <div class="brandImg3">
                             <img src="/src//assets/img/brandingImg3.png" />
-                        </div>
+                        </div> -->
 
                         <div class="case">
                             <a href="#" class="case-link">Check Case Studies</a>
