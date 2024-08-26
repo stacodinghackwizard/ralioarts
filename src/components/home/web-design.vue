@@ -3,8 +3,8 @@
     <div class=" hero-header background py-lg-5">
         <div class="container-fluid px-lg-5 py-lg-5">
             <div class="row g-0 align-items-top ">
-                <div class="col-lg-6 pt-5">
-                    <h1 class="mb-3 animated slideInDown col-lg-8 brand-text px-0"><span class="black">Web design <br/> & Developmet </span></h1>
+                <div class="col-lg-6">
+                    <h1 class="mb-3 animated slideInDown  brand-text px-0"><span class="black">Web design <br/> & Developmet </span></h1>
                     <p class="animated slideInDown mb-5 col-lg-9 px-0">
                         We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using. 
                     </p>
