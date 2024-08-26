@@ -5,15 +5,15 @@ import { RouterLink } from "vue-router";
 <template>
   <div class="">
     <footer class="footer-section">
-        <div class="container">
+        <div class="container-fluid px-lg-5">
             <div class="footer-cta pt-5 pb-5">
-                <div class="row justify-content-between">
+                <div class="row justify-content-between footer-flex">
                     <div class="col-lg-9 col-md-9 col-sm-6 px-0 mb-30">
                         <div class="single-cta ">
                             <!-- <i class="fas fa-map-marker-alt light-blue"></i> -->
                             <div class="cta-text">
-                                <h1 class="" style="font-size: 64px;">have a business idea?</h1>
-                                <span class="px-0 mx-0 " style="display: flex;flex-wrap: wrap;font-size: 48px; align-items: center;" ><RouterLink to="/contact-us" class="nav-link pl-0" style="color: #59D4BE; text-decoration: underline">Get in touch</RouterLink>with us</span>
+                                <h1 class="brand-text">have a business idea?</h1>
+                                <span class="px-0 mx-0 footer-touch" style="display: flex;flex-wrap: wrap; align-items: center;" ><RouterLink to="/contact-us" class="nav-link pl-0" style="color: #59D4BE; text-decoration: underline">Get in touch</RouterLink>with us</span>
                             </div>
                         </div>
                     </div>
@@ -54,10 +54,10 @@ import { RouterLink } from "vue-router";
                     </div>
                   </div>
                     
-                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 ">
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                     <div class="footer-widget">
                         
-                        <div class=" float-end" >
+                        <div class="footer-social" >
                             <div class="">
                                 <ul class="row gap-3">
                                     <li class="col">
@@ -151,6 +151,46 @@ ul {
     margin: 0px;
     padding: 0px;
 }
+.footer-flex{
+  align-items: center;
+}
+.footer-touch{
+  font-size: 48px !important;
+}
+@media screen and (max-width: 900px) {
+   
+   .footer-touch {
+     font-size: 28px !important;
+     
+   }
+}
+.brand-text{
+    font-size: 64px !important;
+    font-weight: 600;
+}
+@media screen and (max-width: 900px) {
+   
+    .brand-text {
+      font-size: 34px !important;
+      font-weight: 400;
+      padding-top: 40px !important;
+    }
+    
+}
+.footer-social{
+  float: right !important;
+}
+.footer-social li{
+  font-size: 21px;
+}
+@media screen and (max-width: 900px) {
+   
+   
+   .footer-social{
+    float: left !important;
+     margin-top: 20px;
+   }
+}
 .footer-section {
   background: #1F2123;
   position: relative;
@@ -174,7 +214,7 @@ ul {
   border-bottom: 1px solid #373636;
 }
 .footer-links li{
-  /* font-size: 43px; */
+  font-size: 26px;
 }
 .touch{
   color: #59D4BE;

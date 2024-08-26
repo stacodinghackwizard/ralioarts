@@ -1,7 +1,7 @@
 <template>
     <!-- Header Start -->
-    <div class=" hero-header background py-lg-5">
-        <div class="container-fluid px-lg-5 py-5">
+    <div class=" hero-header background py-lg-5 py-md-5 pb-sm-5">
+        <div class="container-fluid px-lg-5 py-lg-5">
             <div class="row g-0 align-items-top ">
                 <div class="col-lg-6 pt-5">
                     <h1 class="mb-3 animated slideInDown col-lg-8 brand-text px-0"><span class="black">Web design <br/> & Developmet </span></h1>
