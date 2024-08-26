@@ -1,28 +1,25 @@
 <template>
     <!-- Header Start -->
-    <div class="hero-header make-team bg-light">
-        
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-sm-12 col-12">
-                   <div class="makeTeamImg">
-                        <img src="/src//assets/img/make-team.png" />
-                   </div>
-                </div>
-                <div class="col-lg-6 col-sm-12 col-12">
-                    <div class="content-center bg-white">
-                        <div class="content-wrapper px-5">
-                            <h1 class="heading col-lg-8 mb-3 px-0">We make it all<br/> make sense</h1>
-                            <p>
-                                We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using. We achieve this by our tested and proven approach. We will like to help you on your next project.
-                            </p>
-                        </div>
+    <div class="hero-header bg-light">
+        <div class="row make-team">
+            <div class="col-lg-6 col-sm-12 p-0 m-0">
+                <img class="makeTeamImg" src="/src/assets/img/smallTeam.svg"/>
+            </div>
+            <div class="col-lg-6 col-sm-12 p-0 m-0">
+                <div class="content-center bg-white px-md-4 px-sm-5 px-lg-5">
+                    <div class="content-wrapper px-md-4 px-sm-5 px-lg-5">
+                        <h1 class="heading mb-3 px-0" style="font-size: 56px;">We make it all<br/> make sense</h1>
+                        <p class="maketeam-content col-lg-11 px-0">
+                            We take your brand to where it needs to be through Visuals, we are everything that happens between your first idea to a product everyone is using. We achieve this by our tested and proven approach. We will like to help you on your next project.
+                        </p>
                     </div>
                 </div>
             </div>
-        
+        </div>
     </div>
     <!-- Header End -->
 </template>
+
 
 <script>
 
@@ -35,6 +32,12 @@
 }
 .bg-light{
     background-color: #F0F5FF !important;
+}
+.maketeam-content{
+    
+    /* width: 400px; */
+    line-height: 35px;
+    
 }
 .brand-text{
     
@@ -67,49 +70,73 @@
 }
 .make-team{
     width: 100%;
-    height: 60vh;
+    /* height: 550px; */
     /* border-top: 1px solid black; */
     /* border-bottom: 2px solid red; */
     overflow: hidden
 }
-.makeTeamImg{
+
+
+.make-team {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    height: 60vh;
-    /* border: 1px solid green; */
+    overflow: hidden;
 }
 
-.makeTeamImg img{
-    
-    background-repeat: no-repeat;
-    height: 60vh;
+.makeTeamImg {
     width: 100%;
-    background-size: cover;
-    background-position: center;
-    /* background-attachment: fixed; */
+    height: 100%;
+    object-fit: cover;
 }
-.content-center{
-    width: 100%;
-    height: 60vh;
-    /* border: 1px solid blue; */
 
+.content-center {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
     box-sizing: border-box;
 }
-.content-wrapper {
-    max-width: 90%;
+
+@media (max-width: 992px) {
+    .make-team,
+    .makeTeamImg {
+        height: auto;
+    }
+
+    .makeTeamImg img {
+        height: auto;
+        width: 100%;
+    }
+
+    .content-center {
+        height: auto;
+        padding: 50px;
+    }
+}
+
+.content-center .heading {
+    font-size: 56px;
+    font-weight: 500;
+   
+}
+
+
+.px-lg-5{
+    max-width: 100%;
+    padding: ;
     
 }
-.content-center .heading{
+/* .content-center .heading{
     font-weight: 700;
     font-size: 38px;
-}
-.content-wrapper p{
+} */
+/* .content-wrapper p{
     font-size: 16px;
     font-weight: 200;
-}
+} */
 .col-lg-6{
     padding: 0;
     margin: 0;
@@ -125,29 +152,7 @@
   }
 
 
-  @media (max-width: 992px) {
-    .make-team, .makeTeamImg {
-        height: auto;
-    }
-
-    .makeTeamImg img {
-        height: auto;
-        width: 100%;
-    }
-
-    .content-center {
-        height: auto;
-        padding: 40px;
-    }
-
-    .content-wrapper {
-        max-width: 100%;
-    }
-
-    .content-center .heading {
-        font-size: 28px;
-    }
-}
+ 
 
 @media (max-width: 768px) {
     .content-center .heading {
@@ -162,9 +167,9 @@
         padding-left: 0;
     }
 
-    .content-center {
+    /* .content-center {
         padding: 30px;
         text-align: justify;
-    }
+    } */
 }
 </style>

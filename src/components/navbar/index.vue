@@ -45,11 +45,12 @@ onUnmounted(() => {
   <div :class="{ 'menu--is-revealed': isMenuRevealed }" id="wrapper">
     <nav
       :class="['navbar', 'navbar-expand-lg', 'navbar-dark', 'tta_navbar', 'tta-navbar-light', { scrolled: isScrolled }]"
+      class="px-0"
       id="tta-navbar"
     >
-      <div class="container">
+      <div class="container-fluid px-lg-5">
         <RouterLink class="navbar-brand" to="/" @click="HideburgerMenu">
-          <img src="/src/assets/img/ralioLogo.png" class="logo" />
+          <img src="/src/assets/img/headerLogo.svg" class="logo" />
           <span class="logo-bg">Ralioarts</span>
         </RouterLink>
 

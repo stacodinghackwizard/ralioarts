@@ -1,11 +1,11 @@
 <template>
     <!-- Header Start -->
-    <div class="container-fluid hero-header bg-light py-5">
-        <div class="container py-5">
+    <div class=" hero-header bg-light py-5">
+        <div class="container-fluid px-lg-5 py-lg-5">
             <div class="row g-0 align-items-top">
                 <div class="col-lg-5">
-                    <h1 class="mb-3 animated slideInDown col-lg-8 brand-text px-0"><span class="black">Branding </span></h1>
-                    <p class="animated slideInDown mb-5  col-lg-9 px-0">
+                    <h1 class="mb-3 animated slideInDown col-lg-8 brand-text px-0" ><span class="black">Branding </span></h1>
+                    <p class="animated slideInDown mb-5  col-lg-9 px-0" >
                         We take you to where you need to be through Visuals, we are everything that happens between your first idea to a product everyone is using. 
                     </p>
                     <a href="#" class="btn transparent border-dark py-3 px-4 animated slideInDown start-project-btn">Start a Project</a>
@@ -65,6 +65,7 @@
     .brandImg{
         display: flex;
         justify-content: center;
+        padding-top: 40px;
 }
 }
 
@@ -115,8 +116,16 @@
     overflow: hidden;
 }
 .brand-text{
-    font-size: 40px;
+    font-size: 64px;
     font-weight: 600;
+}
+@media screen and (max-width: 900px) {
+   
+    .brand-text {
+      font-size: 40px !important;
+      font-weight: 600;
+      padding-top: 40px !important;
+    }
 }
 .black{
     color: #000;
@@ -145,6 +154,9 @@
     flex-direction: column;
     margin-top: 40px;
     gap: 10px;
+}
+.brand-footer a,  .case a{
+    font-size: 18px;
 }
 .case{
     display: flex;

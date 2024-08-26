@@ -8,12 +8,12 @@ import { RouterLink } from "vue-router";
         <div class="container">
             <div class="footer-cta pt-5 pb-5">
                 <div class="row justify-content-between">
-                    <div class="col-xl-4 col-md-4 col-sm-6 px-0 mb-30">
+                    <div class="col-lg-9 col-md-9 col-sm-6 px-0 mb-30">
                         <div class="single-cta ">
                             <!-- <i class="fas fa-map-marker-alt light-blue"></i> -->
                             <div class="cta-text">
-                                <h1>Have a business idea?</h1>
-                                <span class="px-0 mx-0" style="display: flex;flex-wrap: wrap;font-size: 20px; align-items: center;" ><RouterLink to="/contact-us" class="nav-link pl-0" style="color: #59D4BE; text-decoration: underline">Get in touch</RouterLink>with us</span>
+                                <h1 class="" style="font-size: 64px;">have a business idea?</h1>
+                                <span class="px-0 mx-0 " style="display: flex;flex-wrap: wrap;font-size: 48px; align-items: center;" ><RouterLink to="/contact-us" class="nav-link pl-0" style="color: #59D4BE; text-decoration: underline">Get in touch</RouterLink>with us</span>
                             </div>
                         </div>
                     </div>
@@ -26,13 +26,13 @@ import { RouterLink } from "vue-router";
                             </div>
                         </div>
                     </div> -->
-                    <div class="col-xl-4 col-md-4 col-sm-6 mb-30">
+                    <div class="col-lg-3 col-md-3 col-sm-6 mb-30">
                         <div class="single-cta float-end">
-                            <i class="far fa-envelope-open" style="color: #59D4BE;"></i>
+                            <!-- <i class="far fa-envelope-open" style="color: #59D4BE;"></i> -->
                             <div class="cta-text">
                                 <!-- <h4>Mail us</h4> -->
-                                <span>info@ralioarts.ng</span><br>
-                                <span>+2348068524030</span>
+                                <span style="font-size: 33px">info@ralioarts.ng</span><br>
+                                <span style="font-size: 33px">+2348068524030</span>
                             </div>
                         </div>
                     </div>
@@ -40,7 +40,7 @@ import { RouterLink } from "vue-router";
             </div>
             <div class="footer-cta footer-links-content pt-5 pb-5">
                 <div class="row ">
-                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-50">
+                  <div class="col-xl-6 col-lg-4 col-md-4 col-sm-12 mb-50">
                     <div class="footer-widget">
                        
                         
@@ -94,7 +94,7 @@ import { RouterLink } from "vue-router";
                 <div class="col-xl-12 col-lg-12 col-md-12 footer-links-width">
                   <div class="footer-widget">
 
-                    <ul class="  d-flex justify-content-between">
+                    <ul class=" footer-links  d-flex justify-content-between">
                         <li><RouterLink to="/"><span>Home</span></RouterLink></li>
                         <li><RouterLink to="/branding">Branding</RouterLink></li>
                         <li><RouterLink to="/services"><span>Services</span></RouterLink></li>
@@ -152,7 +152,7 @@ ul {
     padding: 0px;
 }
 .footer-section {
-  background: #151414;
+  background: #1F2123;
   position: relative;
   bottom: 0;
   left: 0;
@@ -172,6 +172,9 @@ ul {
 }
 .footer-cta {
   border-bottom: 1px solid #373636;
+}
+.footer-links li{
+  /* font-size: 43px; */
 }
 .touch{
   color: #59D4BE;

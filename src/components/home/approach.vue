@@ -1,13 +1,13 @@
 <template>
     <!-- Header Start -->
-    <div class="container-fluid hero-header background py-5">
-        <div class="container">
+    <div class=" hero-header background py-5">
+        <div class="container-fluid px-lg-5 ">
           <div class="py-5">
 
             <div class="col-lg-12 px-0 text-center">
                 <div class="text-center display-center">
                     <h6 class="mb-3 animated slideInDown  approach-text px-0">Our Approach </h6>
-                    <p class="animated slideInDown text-center col-md-7  pt-3 px-0">
+                    <p class="animated slideInDown text-center col-md-7  pt-3 px-0" style="font-size: 18px;">
                       We blend creativity with strategy, starting with understanding your needs and goals. Through collaborative brainstorming and meticulous planning, we prioritize user experience and innovative design to deliver stunning and high-performing projects from concept to execution.
                     </p>
                   
@@ -128,6 +128,12 @@
   width: 1.5rem;
   height: 1.5rem;
 }
+.card-title{
+  font-size: 40px;
+}
+.card-text{
+  font-size: 18px;
+}
 @media screen and (min-width: 577px) {
   .cards-wrapper {
     display: flex;
@@ -156,8 +162,16 @@
 .approach-text{
     
     
-    font-size: 40px;
+    font-size: 64px;
     font-weight: 600;
+}
+@media screen and (max-width: 900px) {
+   
+   .approach-text {
+     font-size: 40px !important;
+     font-weight: 600;
+     padding-top: 40px !important;
+   }
 }
 .black{
     color: #000;

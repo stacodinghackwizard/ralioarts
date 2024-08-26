@@ -13,11 +13,11 @@
           @click="moveToCenter(index)"
         >
           <div class="avatar" :style="{ backgroundImage: 'url(' + card.avatar + ')' }"></div>
-          <h3 class="mt-5">{{ card.name }}</h3>
-          <p>{{ card.quote }}</p>
+          <h3 class="mt-5 card-name">{{ card.name }}</h3>
+          <p class="card-quote">{{ card.quote }}</p>
           <div class="display-flex2">
 
-            <p><strong>{{ card.title }}</strong></p>
+            <p class="card-title"><strong>{{ card.title }}</strong></p>
             <p> <i class="fa fa-star" aria-hidden="true"></i> {{ card.rating }}</p>
           </div>
         </div>
@@ -111,6 +111,13 @@ export default {
 </script>
 
 <style scoped>
+.card-name{
+  font-size: 24px;
+  font-weight: 600;
+}
+.card-quote{
+  font-size: 18px;
+}
 .fa-star {
   color: #FFC564;
 }
@@ -254,7 +261,8 @@ section {
   /* color: #15928A; */
   /* font-size: 1.5rem; */
   height: 20rem;
-  min-width: 21rem;
+  min-width: 25rem;
+  padding: 0 40px !important;
   cursor: pointer;
  
 }

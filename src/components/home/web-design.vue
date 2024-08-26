@@ -1,7 +1,7 @@
 <template>
     <!-- Header Start -->
-    <div class="container-fluid hero-header background py-lg-5">
-        <div class="container py-5">
+    <div class=" hero-header background py-lg-5">
+        <div class="container-fluid px-lg-5 py-5">
             <div class="row g-0 align-items-top ">
                 <div class="col-lg-6 pt-5">
                     <h1 class="mb-3 animated slideInDown col-lg-8 brand-text px-0"><span class="black">Web design <br/> & Developmet </span></h1>
@@ -71,6 +71,7 @@
     .brandImg{
         display: flex;
         justify-content: center;
+        padding-top: 40px;
 }
 }
 
@@ -123,8 +124,16 @@
 .brand-text{
     
     
-    font-size: 40px;
+    font-size: 64px;
     font-weight: 600;
+}
+@media screen and (max-width: 900px) {
+    
+    .brand-text {
+      font-size: 40px !important;
+      font-weight: 600;
+      padding-top: 40px !important;
+    }
 }
 .black{
     color: #000;
@@ -155,6 +164,9 @@
     gap: 10px;
     /* padding: 20px; */
     /* display: block; */
+}
+.brand-footer a,  .case a{
+    font-size: 18px;
 }
 .case{
     display: flex;

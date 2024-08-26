@@ -2,8 +2,8 @@
     <!-- Header Start -->
      <div class="background">
 
-         <div class="container-fluid appImg hero-header mt-lg-5  ">
-             <div class="container py-5">
+         <div class="appImg hero-header mt-lg-5  ">
+             <div class="container-fluid px-lg-5 py-5">
                  <div class="row g-0 align-items-top">
                      <div class="col-lg-6 pt-5 px-0 ">
                          <h1 class="mb-3  animated slideInDown brand-text col-lg-8 ml-0 pl-0"><span class="black">Mobile App Design</span></h1>
@@ -119,8 +119,16 @@ export default {
 }
 
 .brand-text {
-    font-size: 40px;
+    font-size: 64px;
     font-weight: 600;
+}
+@media screen and (max-width: 900px) {
+    
+    .brand-text {
+      font-size: 40px !important;
+      font-weight: 600;
+      padding-top: 40px !important;
+    }
 }
 
 .black {
@@ -156,6 +164,9 @@ export default {
     flex-direction: column;
     margin-top: 40px;
     gap: 10px;
+}
+.brand-footer a, .case a{
+    font-size: 18px;
 }
 
 .case {
