@@ -8,7 +8,7 @@
             <div class="col-lg-6 col-sm-12 p-0 m-0">
                 <div class="content-center bg-white px-md-4 px-sm-5 px-lg-5">
                     <div class="content-wrapper ">
-                        <h1 class="heading mb-3 px-0 col-lg-8 col-sm-12">We make it all make sense</h1>
+                        <h1 class="heading mb-3 px-0 col-lg-10 col-sm-12">We make it all <br/>make sense</h1>
                         <p class="maketeam-content col-lg-11 px-0">
                             We take your brand to where it needs to be through Visuals, we are everything that happens between your first idea to a product everyone is using. We achieve this by our tested and proven approach. We will like to help you on your next project.
                         </p>
@@ -124,7 +124,7 @@
 
 .content-center .heading {
     font-size: 56px;
-    font-weight: 500;
+    font-weight: 600;
    
 }
 
@@ -162,14 +162,14 @@
 @media (max-width: 768px) {
     .content-center .heading {
         font-size: 24px;
-        padding-left: 0;
+        padding-left: 10px !important;
     }
 }
 
 @media (max-width: 576px) {
     .content-center .heading {
         font-size: 20px;
-        padding-left: 0;
+        padding-left: 10px !important;
     }
 
     /* .content-center {
